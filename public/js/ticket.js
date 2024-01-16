@@ -3,8 +3,7 @@
 document.addEventListener('DOMContentLoaded', ()=>{
     let backward = document.getElementById('backward-effect');
     let triggerButton = document.getElementById('trigger-button');
-    let ticketMachine = document.getElementById('ticket-machine');
-    let processTicket = document.getElementById('processTicket');
+    let titles = document.getElementById('titles')
 
     function typewriter(inputText, id) {
         var i = 0;
@@ -33,7 +32,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
         backward.style.transform = 'scale(1)';
         backward.style.zIndex = 8;
 
-        // Use setTimeout to add rotation after a delay
         setTimeout(() => {
             let transform = 'scale(0.25)';
             backward.style.transform = transform;
@@ -55,7 +53,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
         setTimeout(() => {
             let transform = 'translateX(500px)';
+            titles.style.transform = 'translateX(-100px)';
+            titles.style.scale = '0.6';
             backward.style.transform += transform;
+
         }, 3300)
 
         function ticket() {
@@ -68,7 +69,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
             }, 100);
 
             setTimeout(() => {
-                backward.style.backgroundColor='rgb(14,5,10)'
+                backward.style.backgroundColor='rgb(14,5,10)';
+                titles.style.display = 'none';
                 backward.appendChild(ticketDiv);
                 backward.style.zIndex = -1;
             }, 5000);
@@ -79,15 +81,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
         setTimeout(ticket, 600);
         
     }
-
-
-
-
-
-
-
-
-
 
 
     triggerButton.addEventListener('click', function () {

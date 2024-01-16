@@ -2,6 +2,14 @@
     font-family: cascadiacode;
     src: url('../fonts/CascadiaMono.ttf');
 }
+@font-face {
+    font-family: bal;
+    src: url('../fonts/Bal-Regular.ttf');
+}
+@font-face {
+    font-family: poppins;
+    src: url('../fonts/poppins.regular.ttf');
+}
 
 
 body {
@@ -18,13 +26,15 @@ body {
 
 #backward-effect {
     width: 1000px;
-    height: 500px;
-    background-color: blue;
+    height: 480px;
+    background-color: rgb(255, 255, 255);
     transition: transform 1s ease-in-out, width 1s ease-in-out, height 1s ease-in-out;
     /* Added width and height transitions */
     position: absolute;
     z-index: 5;
     top: 100px;
+    border-radius: 30px;
+    padding: 10px;
 }
 
 #ticket-machine {
@@ -36,7 +46,7 @@ body {
     
     margin: 50px;
     position: absolute;
-    top: 200px;
+    top: 170px;
     opacity: 1;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -71,6 +81,7 @@ body {
     opacity: 0;
     /* Initially set opacity to 0 for fade-in effect */
     transition: opacity 0.2s ease-in-out;
+    border-radius: 30px;
 }
 
 @keyframes moveDown {
@@ -94,4 +105,97 @@ body {
     font-family: cascadiacode;
     font-size: 13px;
     top: -6px;
+}
+
+#titles ul, #titleData ul{
+display: flex;
+}
+#titles, #titleData{
+margin-left: 15px;
+position: relative;
+}
+
+#titles h6, #titleData h6{
+margin-left: 20px;
+margin-right: 20px;
+font-size: 18px;
+font-family: poppins;
+}
+
+.passenger{
+    margin-right: 250px !important;
+    left: 60px;
+    position: relative;
+}
+
+#passengerTitle{
+    margin-right: 245px !important;
+}
+
+
+#titleData{
+    position: relative;
+top: -155px;
+}
+#titles{
+    top: -65px
+}
+#titles h6{
+    left: -10px;
+}
+#titleData h6{
+    position: relative;
+    top: -25px;
+    left: -10px;
+}
+
+
+.horizontal{
+    width: 585px;
+    height: 1px;
+    position: relative;
+    top: -55px;
+    background-color: black;
+    left: 50px;
+}
+
+
+.divide{
+    transform: rotateZ('90deg');
+    width: 1px;
+    height: 17px;
+    background-color: black;
+    position: relative;
+    top: 20px;
+    margin-left: 2px;
+}
+
+.row{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    top: -210px;
+    left: 60px;
+    justify-content: space-between;
+    max-width: 460px;
+
+}
+
+.row img{
+    max-width: 60px;
+    margin-left: 30px ;
+    margin-right: 30px;
+}
+
+.departure, .destination{
+    font-size: 120px;
+
+}
+
+.barcode{
+    top: -180px;
+    left: 65px;
+    position: relative;
+    max-height: 45px;
 }
