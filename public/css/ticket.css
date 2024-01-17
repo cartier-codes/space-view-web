@@ -179,6 +179,7 @@ top: -155px;
     left: 60px;
     justify-content: space-between;
     max-width: 460px;
+    font-family: bal;
 
 }
 
@@ -189,7 +190,7 @@ top: -155px;
 }
 
 .departure, .destination{
-    font-size: 120px;
+    font-size: 170px;
 
 }
 
@@ -198,4 +199,58 @@ top: -155px;
     left: 65px;
     position: relative;
     max-height: 45px;
+}
+#warning{
+ color: black;   
+ position: relative;
+ top: -225px;
+ left: 350px;
+ max-width: 340px;
+ font-size: 11px;
+ font-family: poppins;
+ text-align: center;
+}
+
+#side-ticket{
+    background-color: blue;
+    width: 315px;
+    position: relative;
+    top: -629px;
+    left: 695px;
+    height: 104.25%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+#row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 25px;
+    padding-left: 35px;
+    padding-bottom: 30px;
+    background-color: aqua;
+    border-top-right-radius: 30px;
+}
+
+#row .destination {
+    font-size: 52px !important;
+    font-family: poppins;
+    letter-spacing: -3px;
+}
+
+#row .departure{
+    font-size: 52px !important;
+    font-family: poppins;
+letter-spacing: -3px;
+}
+#row img{
+    max-width: 45px;
+    margin-left: 10px ;
+    margin-right: 9px;
+}
+
+
+.first-column{
+    position: relative;
 }

@@ -23,25 +23,39 @@
         </ul>
         <div class="horizontal"></div>
       </div>
-    <div id="titleData">
-      <ul>
-        <h6 class="passenger">
-          JOHN DOE
-        </h6>
-        <div class="divide"></div>
-        <h6>SC5735</h6>
-        <div class="divide"></div>
-        <h6>7B</h6>
-        <div class="divide"></div>
-        <h6>A12</h6>
-      </ul>
-    </div>
-    <div class="row">
-      <div class="departure">EAR</div>
-      <img src="../img/black-plane.png" alt="" class="plane">
-      <div class="destination">MER</div>
-    </div>
-    <img src="../img/barcode.png" alt="" class="barcode">
+      <div id="titleData">
+        <ul>
+          <h6 class="passenger">
+            JOHN DOE
+          </h6>
+          <div class="divide"></div>
+          <h6>SC5735</h6>
+          <div class="divide"></div>
+          <h6>7B</h6>
+          <div class="divide"></div>
+          <h6>A12</h6>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="departure">EAR</div>
+        <img src="../img/black-plane.png" alt="" class="plane">
+        <div class="destination">MER</div>
+      </div>
+      <img src="../img/barcode.png" alt="" class="barcode">
+      <p id="warning">Please note that we are not liable for any damage caused by you or to you</p>
+      <div id="side-ticket">
+        <div id="row">
+          <div class="departure">EAR</div>
+          <img src="../img/black-plane.png" alt="" class="plane">
+          <div class="destination">MER</div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="first-column">
+          <h6>PASSENGER</h6>
+          <div class="vertical"></div>
+        </div>
+      </div>
 
     </div>
     <div id="ticket-machine">
