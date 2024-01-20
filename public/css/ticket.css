@@ -197,7 +197,7 @@ top: -155px;
     top: -180px;
     left: 65px;
     position: relative;
-    max-height: 45px;
+    max-height: 65px;
 }
 #warning{
  color: black;   
@@ -248,7 +248,7 @@ letter-spacing: -3px;
     align-items: center;
     left: 712px;
     position: relative;
-    top: -625px;
+    top: -645px;
     background-color: pink;
     display: inline-block;
     border-top-right-radius: 30px;
@@ -276,7 +276,7 @@ font-family: poppins;
 
 #side-ticket-main{
     position: relative;
-    top: -626px;
+    top: -646px;
     left: 712px;
     height: 392px;
     width: 298px;

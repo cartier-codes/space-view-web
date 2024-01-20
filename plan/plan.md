@@ -33,4 +33,19 @@ space view will be a space themed app based around the planets, famous stars, th
                 }
                 ```
 -The famous stars:
-    -
+
+
+
+
+
+
+Things that have been done:
+    -Ticket Animation
+    -Ticket "processing"
+    -Ticket Styling
+
+
+Things that need to be done:
+    -EVERYTHING!!!
+    -Index
+    
