@@ -4,6 +4,12 @@ document.addEventListener('DOMContentLoaded', ()=>{
     let backward = document.getElementById('backward-effect');
     let triggerButton = document.getElementById('trigger-button');
     let titles = document.getElementById('titles')
+    let ticketRow  = document.querySelector('.row')
+    let titleData = document.getElementById('titleData');
+    let sideTicketTitle = document.getElementById('side-ticket-title');
+    let sideTicketMain = document.getElementById('side-ticket-main');
+    let barcode = document.querySelector('.barcode');
+    let warningpar  = document.getElementById('warning')
 
     function typewriter(inputText, id) {
         var i = 0;
@@ -42,6 +48,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
             backward.style.transform += transform;
         }, 1400)
         setTimeout(() => {
+            sideTicketMain.style.display = 'none'
+            sideTicketTitle.style.display = 'none'
+            barcode.style.display = 'none'
+            warningpar.style.display = 'none';
             let transform = 'rotateZ(90deg)';
             backward.style.transform += transform;
         }, 2000);
@@ -54,7 +64,13 @@ document.addEventListener('DOMContentLoaded', ()=>{
         setTimeout(() => {
             let transform = 'translateX(500px)';
             titles.style.transform = 'translateX(-100px)';
+            titleData.style.transform = 'translateX(-100px)'
+            ticketRow.style.transform = 'translateX(-100px)';
+            barcode.style.transform = 'translateX(-100px)'
+            warningpar.style.transform = 'translateX(-100px)';
             titles.style.scale = '0.6';
+            titleData.style.scale = '0.6'
+            ticketRow.style.scale = '0.5';
             backward.style.transform += transform;
 
         }, 3300)
@@ -62,7 +78,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         function ticket() {
             let ticketDiv = document.createElement('div');
             ticketDiv.className = 'ticket';
-           backward.removeChild(triggerButton)
+            triggerButton.style.visibility ='hidden'
             // Set opacity to 1 for fade-in effect
             setTimeout(() => {
                 ticketDiv.style.opacity = 1;
@@ -71,9 +87,19 @@ document.addEventListener('DOMContentLoaded', ()=>{
             setTimeout(() => {
                 backward.style.backgroundColor='rgb(14,5,10)';
                 titles.style.display = 'none';
+                ticketRow.style.scale = '0.5';
+                ticketRow.style.display = 'block';
+                ticketRow.style.top = '-250px'
+                titles.style.paddingTop= '50px'
+                titles.style.display = 'block'
+                ticketDiv.style.backgroundColor = 'white';
+                ticketDiv.appendChild(titles)
+                ticketDiv.appendChild(titleData)
+                ticketDiv.appendChild(ticketRow)
+                ticketRow.style.display = 'flex'
                 backward.appendChild(ticketDiv);
                 backward.style.zIndex = -1;
-            }, 5000);
+            }, 4200);
 
             // Show ticket machine after ticket is appended
         }
@@ -86,7 +112,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     triggerButton.addEventListener('click', function () {
         perspectiveChange();
         setTimeout(() => { backward.remove() }, 10000);
-        setTimeout(() => typewriter("Ticket recieved... \n Processing...", 'processTicket'), 8900);
+        setTimeout(() => typewriter("Ticket recieved... \n Processing...  \n Departure Station: EAR \n Destination Station: MER \n Departure Time: 2:00PM \n Seat Number: A12 \n Spacecraft: SC5735 \n Gate: 6A" , 'processTicket'), 8000);
         triggerButton.disabled = true;
     });
 })

@@ -161,13 +161,12 @@ top: -155px;
 
 
 .divide{
-    transform: rotateZ('90deg');
     width: 1px;
     height: 17px;
     background-color: black;
     position: relative;
     top: 20px;
-    margin-left: 2px;
+    margin-left: 9px;
 }
 
 .row{
@@ -211,16 +210,6 @@ top: -155px;
  text-align: center;
 }
 
-#side-ticket{
-    background-color: blue;
-    width: 315px;
-    position: relative;
-    top: -629px;
-    left: 695px;
-    height: 104.25%;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-}
 
 #row{
     display: flex;
@@ -253,4 +242,183 @@ letter-spacing: -3px;
 
 .first-column{
     position: relative;
+}
+
+#side-ticket-title{
+    align-items: center;
+    left: 712px;
+    position: relative;
+    top: -625px;
+    background-color: pink;
+    display: inline-block;
+    border-top-right-radius: 30px;
+    padding-bottom: 15px;
+}
+
+#side-ticket-title img{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#short-plane{
+    max-width: 45px;
+    max-height: 30px;
+}
+
+#side-ticket-title #short-departure{
+font-size: 56px;    
+font-family: poppins;
+}
+
+#side-ticket-title #short-destination{
+font-size: 56px;
+font-family: poppins;
+}
+
+#side-ticket-main{
+    position: relative;
+    top: -626px;
+    left: 712px;
+    height: 392px;
+    width: 298px;
+}
+
+
+#side-ticket-passenger{
+    position: relative;
+    left: 40px;
+    font-family: poppins;
+    top: 220px;
+}
+
+.text{
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+}
+
+
+
+body{
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.side-ticket-title-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 32px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+
+#short-departure ,#short-destination{
+letter-spacing: -3px;
+}
+
+.side-ticket-divide{
+width: 1px;
+height: 300px;
+background-color: black;
+position: relative;
+}
+
+#side-ticket-divide1{
+    left: 60px;
+    top: -80px;
+}
+
+#side-ticket-passenger-data{
+    position: relative;
+    top: -156px;
+    left: 67px;
+font-family: poppins ;
+}
+
+#side-ticket-flight-titles{
+    position: relative;
+    top: -370px;
+    left: 90px;
+}
+
+#side-ticket-flight-titles ul{
+    display: inline-block;
+
+}
+
+#side-ticket-flight-titles li{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column-reverse;
+    font-family: poppins;
+}
+#side-ticket-divide2{
+    position: relative;
+    top: -727px;
+    left: 130px;
+}
+
+.divide-container{
+    position: relative;
+    top: -885px;
+    left: 135px;
+}
+
+.side-divide{
+    position: relative;
+    width: 25px;
+    height: 1px;
+    margin-bottom: 75px;
+    background-color: black;
+}
+#side-ticket-flight-data{
+    position: relative;
+    top: -975px;
+    left: 125px;
+}
+
+#side-ticket-flight-data ul{
+    display: inline-block;
+    list-style: none;
+}
+
+#side-ticket-flight-data li{
+    padding-bottom: 56px;
+}
+
+
+#side-ticket-main{
+    background-color: aqua;
+    border-bottom-right-radius: 30px;
+}
+#top-data{
+    padding-bottom: 20px !important;
+    padding-top: 20px !important
+}
+#middle-data{
+    padding-bottom: 35px !important;
+}
+
+.data-divider{
+    position: relative;
+    width: 57px;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    margin-top:80px;
+}
+
+#divider-wrapper{
+    top: -245px;
+    position: relative;
+    left:7px;
+}
+
+#side-ticket-barcode{
+    position: relative;
+    transform: rotateZ(-90deg);
+    top: -1280px;
+    width: 100px;
+    scale: 2.5;
+    left: 200px;
 }

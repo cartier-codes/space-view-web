@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -41,22 +40,46 @@
         <img src="../img/black-plane.png" alt="" class="plane">
         <div class="destination">MER</div>
       </div>
-      <img src="../img/barcode.png" alt="" class="barcode">
+      <img src="../img/barcode-14628.png" alt="" class="barcode">
       <p id="warning">Please note that we are not liable for any damage caused by you or to you</p>
-      <div id="side-ticket">
-        <div id="row">
-          <div class="departure">EAR</div>
-          <img src="../img/black-plane.png" alt="" class="plane">
-          <div class="destination">MER</div>
+      <div id="side-ticket-title">
+        <div class="side-ticket-title-container">
+          <div id="short-departure">EAR</div>
+          <img src="../img/black-plane.png" alt="" id="short-plane">
+          <div id="short-destination">MER</div>
         </div>
       </div>
-      <div class="columns">
-        <div class="first-column">
-          <h6>PASSENGER</h6>
-          <div class="vertical"></div>
+      <div id="side-ticket-main">
+        <div id="side-ticket-passenger">
+          <div class="text">PASSENGER</div>
         </div>
-      </div>
+        <div class="side-ticket-divide" id="side-ticket-divide1">
+        </div>
+        <div id="side-ticket-passenger-data" class="text">
+          John Doe.
+        </div>
+        <div id="side-ticket-flight-titles">
+          <ul>
+            <li class="text">Seat</li>
+            <li class="text">Gate</li>
+            <li class="text">Flight</li>
+          </ul>
+        </div>
+        <div class="side-ticket-divide" id="side-ticket-divide2"></div>
+        <div id="side-ticket-flight-data">
+          <ul>
+            <li class="text" id="top-data">SC5735</li>
+            <li class="text" id="middle-data">7B</li>
+            <li class="text">A12</li>
+          </ul>
+          <div id="divider-wrapper">
+            <div class="data-divider"></div>
+            <div class="data-divider"></div>
+          </div>
 
+        </div>
+        <img src="../img/barcode-14628.png" alt="" id="side-ticket-barcode">
+      </div>
     </div>
     <div id="ticket-machine">
       <div id='processTicket'></div>
