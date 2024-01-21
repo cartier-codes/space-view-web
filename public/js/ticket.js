@@ -1,4 +1,4 @@
-
+import typewriter from "../templates/typewriter.js";
 
 document.addEventListener('DOMContentLoaded', ()=>{
     let backward = document.getElementById('backward-effect');
@@ -10,28 +10,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
     let sideTicketMain = document.getElementById('side-ticket-main');
     let barcode = document.querySelector('.barcode');
     let warningpar  = document.getElementById('warning')
-
-    function typewriter(inputText, id) {
-        var i = 0;
-        var speed = 50;
-    
-        function type() {
-            if (i < inputText.length) {
-                var char = inputText.charAt(i);
-                if (char === '\n') {
-                    document.getElementById(id).appendChild(document.createElement("br"));
-                } else {
-                    document.getElementById(id).innerHTML += char;
-                }
-                i++;
-                setTimeout(type, speed);
-            }
-        }
-    
-        // Start the typing process
-        type();
-    }
-    
 
     function perspectiveChange() {
         // Set the initial scale to 1

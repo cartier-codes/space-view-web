@@ -48,4 +48,6 @@ Things that have been done:
 Things that need to be done:
     -EVERYTHING!!!
     -Index
-    
+Plan for 21/1/2024:
+-Start the index. 
+ 

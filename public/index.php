@@ -9,10 +9,16 @@
     <title>Document</title>
 </head>
 <body>
-   <div class="container  mt-5">
-    <h1>Hi</h1>
-   </div>
-<script src='js/script.js'></script>
+<?php include 'templates/nav.php'?>
+
+<h1 id="astro-view">astro view</h1>
+<main>
+<h1 id="what-is-space"></h1>
+<div class="row mt-5">
+
+</div>
+</main>
+<script type='module' src='js/index.js'></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

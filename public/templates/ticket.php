@@ -86,7 +86,7 @@
       <div id='processTicket'></div>
     </div>
   </div>
-  <script src="../js/ticket.js"></script>
+  <script type='module' src="../js/ticket.js"></script>
 </body>
 
 </html>
