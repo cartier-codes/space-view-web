@@ -1,6 +1,6 @@
-export default function typewriter(inputText, id) {
+export default function typewriter(inputText, id, speed = 50) {
         var i = 0;
-        var speed = 50;
+        var speed = speed;
     
         function type() {
             if (i < inputText.length) {

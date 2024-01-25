@@ -2,9 +2,17 @@
     font-family: helvetica-neue;
     src: url('../fonts/helvetica-neue.ttf');
 }
-
+@font-face {
+    font-family: helvetica-reg;
+    src: url('../fonts/HelveticaNeue-Medium.otf');
+}
+@font-face {
+    font-family: space-mono;
+    src: url('../fonts/SpaceMono-Regular.ttf');
+}
 body{
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .logo{
@@ -63,24 +71,15 @@ font-family: helvetica-neue;}
     background-size: 0 0px, 100% 2px;
   }
 
-#astro-view{
-   animation: moveAcross 7s steps(50) infinite;
-font-family: helvetica-neue ;}
-
-@keyframes moveAcross {
-    0% {
-        transform: translateX(-500px);
-    }
-
-    100% {
-        transform: translateX(1500px);
-    }
-}
-main{
-    margin-top: 100px;
+.text{
+    font-family: helvetica-reg;
+    font-weight: 300;
 }
 
-#what-is-space{
-    text-align: center;
+.bold-text{
     font-family: helvetica-neue;
+}
+#intro{
+    text-align: center;
+    font-size: 96px;
 }

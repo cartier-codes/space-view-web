@@ -10,14 +10,7 @@
 </head>
 <body>
 <?php include 'templates/nav.php'?>
-
-<h1 id="astro-view">astro view</h1>
-<main>
-<h1 id="what-is-space"></h1>
-<div class="row mt-5">
-
-</div>
-</main>
+<h1 class="bold-text" id='intro'>WHAT IS SPACE?</h1>
 <script type='module' src='js/index.js'></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
 </body>
