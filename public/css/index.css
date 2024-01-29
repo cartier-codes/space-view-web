@@ -12,7 +12,6 @@
 }
 body{
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 .logo{
@@ -31,7 +30,7 @@ nav{
     justify-content: space-between;
     padding-left: 50px ;
     padding-right: 50px ;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 
 nav ul{
@@ -40,7 +39,7 @@ nav ul{
     list-style: none;
 
 }
-nav a {
+nav a, #history {
     color: inherit;
     text-decoration: none;
 font-size: 16px;
@@ -48,7 +47,7 @@ font-weight: 600;
 font-family: helvetica-neue;}
 
 
-.nav-row a {
+.nav-row a, #history {
     background:
       linear-gradient(
         to right,
@@ -67,7 +66,7 @@ font-family: helvetica-neue;}
     transition: background-size 400ms;
   }
 
-.nav-row a:hover {
+.nav-row a:hover , #history:hover{
     background-size: 0 0px, 100% 2px;
   }
 
@@ -83,3 +82,55 @@ font-family: helvetica-neue;}
     text-align: center;
     font-size: 96px;
 }
+
+img{
+    border-radius: 7px;
+}
+
+#img-grid-1, #img-grid-2{
+opacity: 0;
+transition: opacity 0.5s ease-in-out;
+}
+
+#img-grid-1.visible{
+    opacity: 1;
+}
+
+#img-grid-2.visible{
+    opacity: 1;
+}
+
+#definition{
+text-align: right;
+padding-right: 15px;
+font-family: helvetica-neue;
+}
+
+#definition-wrapper{
+    margin-top: 100px;
+}
+
+.custom-column{
+    height: auto;
+    font-family: helvetica-reg;
+}
+#space-definition{
+    justify-content: end;
+}
+
+#space-definition-wrapper{
+    margin-top: 100px;
+}
+
+  #interview{
+    justify-content: end;
+  }
+
+  #interview h6{
+    font-family: helvetica-neue;
+    font-size: 20px;
+  }
+
+  #interview p{
+    font-family: helvetica-reg;
+  }
