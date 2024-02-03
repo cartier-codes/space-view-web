@@ -8,7 +8,9 @@ import typewriter from "../templates/typewriter.js"
 function changeColor(){
    let headers = document.querySelectorAll('.astro-view')
    const hexColors = ['#FF5733', '#33FF57', '#5733FF', '#FF33A1', '#A1FF33', '#33A1FF', '#FF3362', '#62FF33', '#3362FF', '#FF3333', '#33FFC5', '#C533FF', '#FFC533', '#5333FF', '#FF33D1'];
-   console.log(headers[0].style.color)
+   for(let i = 0; i < headers.length; i++){
+      headers[i].style.color = hexColors[Math.floor(Math.random()*hexColors.length)]
+   }
 }
 
 function createNewsCard(fetchedData){
