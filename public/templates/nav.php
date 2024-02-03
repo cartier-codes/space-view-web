@@ -1,7 +1,7 @@
 
     <header>
         <nav>
-            <a href="" id="img-link"><img src="img/logo.png" alt="" class="logo"></a>
+            <a href="index.php" id="img-link"><img src="img/logo.png" alt="" class="logo"></a>
             <div class="nav-row">
                 <ul>
                     <li><a href="">planets</a></li>
