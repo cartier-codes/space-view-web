@@ -36,6 +36,7 @@ function createNewsCard(fetchedData){
 
    let a  = document.createElement('a')
    a.href = fetchedData.results[index]['url']
+   a.innerHTML = 'Find out more >'
    newsCards[index].appendChild(a)
   })
 }
@@ -64,71 +65,22 @@ setTimeout(typewriter('WHAT IS SPACE?','intro'),1000)
  },1100)
 
 setInterval(changeColor, 300)
-createNewsCard( {"results": [
-   {
-     "id": 22471,
-     "title": "European-Made 3D Printer Will Be the First to Print Metal in Space",
-     "url": "https://europeanspaceflight.com/european-made-3d-printer-will-be-the-first-to-print-metal-in-space/",
-     "image_url": "https://europeanspaceflight.com/wp-content/uploads/2024/02/European-Made-3D-Printer-Will-Be-the-First-to-Print-Metal-in-Space.jpg",
-     "news_site": "European Spaceflight",
-     "summary": "A 3D printer developed by Airbus under a European Space Agency contract will be the first to print metal components aboard the International Space Station. Aboard the first Northrop Grumman Cygnus mission to be launched by a SpaceX Falcon 9 is a 180-kilogram 3D metal printer. The Cygnus spacecraft, which carried the name of late […]\nThe post European-Made 3D Printer Will Be the First to Print Metal in Space appeared first on European Spaceflight.",
-     "published_at": "2024-02-03T06:53:38Z",
-     "updated_at": "2024-02-03T06:56:58.179000Z",
-     "featured": false,
-     "launches": [],
-     "events": []
-   },
-   {
-     "id": 22470,
-     "title": "Firefly to continue responsive launch operations for future Alpha missions",
-     "url": "https://spacenews.com/firefly-to-continue-responsive-launch-operations-for-future-alpha-missions/",
-     "image_url": "https://i0.wp.com/spacenews.com/wp-content/uploads/2023/09/F6DBVZXWwAApx0H-scaled.jpeg",
-     "news_site": "SpaceNews",
-     "summary": "Firefly Aerospace plans to make the responsive launch operations it demonstrated for the U.S. Space Force last year the norm for upcoming launches of its Alpha rocket.",
-     "published_at": "2024-02-02T20:35:36Z",
-     "updated_at": "2024-02-02T20:36:31.105000Z",
-     "featured": false,
-     "launches": [],
-     "events": []
-   },
-   {
-     "id": 22469,
-     "title": "Eutelsat stops services on aging satellite following anomaly",
-     "url": "https://spacenews.com/eutelsat-stops-services-on-aging-satellite-following-anomaly/",
-     "image_url": "https://i0.wp.com/spacenews.com/wp-content/uploads/2021/08/41901305674_81155e440f_c.jpg",
-     "news_site": "SpaceNews",
-     "summary": "Eutelsat said Feb. 2 it has stopped providing services from an aging geostationary satellite over the Americas following an unspecified anomaly.",
-     "published_at": "2024-02-02T16:41:35Z",
-     "updated_at": "2024-02-02T16:46:21.055000Z",
-     "featured": false,
-     "launches": [],
-     "events": []
-   },
-   {
-     "id": 22468,
-     "title": "Satellite phone networks can democratize global communication",
-     "url": "https://spacenews.com/satellite-phone-networks-democratize-global-communication/",
-     "image_url": "https://i0.wp.com/spacenews.com/wp-content/uploads/2024/01/SpaceX-D2D-webcast-scaled.jpg",
-     "news_site": "SpaceNews",
-     "summary": "As Starlink and other constellations come online, satellite phones could revolutionize the free flow of information.",
-     "published_at": "2024-02-02T15:30:00Z",
-     "updated_at": "2024-02-02T15:36:19.121000Z",
-     "featured": false,
-     "launches": [],
-     "events": []
-   },
-   {
-     "id": 22467,
-     "title": "Blue Origin touts capabilities of Blue Ring transfer vehicle",
-     "url": "https://spacenews.com/blue-origin-touts-capabilities-of-blue-ring-transfer-vehicle/",
-     "image_url": "https://i0.wp.com/spacenews.com/wp-content/uploads/2023/10/bluering.jpg",
-     "news_site": "SpaceNews",
-     "summary": "Blue Origin is highlighting the capabilities of an orbital transfer vehicle design it announced last year, including the ability of the spacecraft to serve as a fuel depot.",
-     "published_at": "2024-02-02T13:08:53Z",
-     "updated_at": "2024-02-02T13:16:18.900000Z",
-     "featured": false,
-     "launches": [],
-     "events": []
-   }
- ]})
+function fetchNewsArticles() {
+   const apiUrl = 'https://api.spaceflightnewsapi.net/v4/articles/?limit=5';
+ 
+   fetch(apiUrl)
+     .then(response => {
+       if (!response.ok) {
+         throw new Error(`HTTP error! Status: ${response.status}`);
+       }
+       return response.json();
+     })
+     .then(data => {
+       createNewsCard(data);
+     })
+     .catch(error => {
+       console.error('Error:', error);
+     });
+ }
+fetchNewsArticles()
 })

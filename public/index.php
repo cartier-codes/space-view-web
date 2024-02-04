@@ -116,6 +116,14 @@
     </div>
 
 </div>
+<div class="row mt-3 mb-4 justify-content-center">
+    <div class="col-3">
+        <div class="card-space">
+            <h3>For more news on space, space news and launches, check out:</h3>
+            <a href="" class="bold-text">News ></a>
+        </div>
+    </div>
+</div>
 <h3 class="astro-view">astro-view</h3>
 <script type='module' src='js/index.js'></script>
 

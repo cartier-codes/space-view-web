@@ -170,7 +170,7 @@ font-family: helvetica-neue;}
 }
 
 
-#card a , .news-card a{
+#card a , .news-card a, .card-space a{
     background:
       linear-gradient(
         to right,
@@ -189,7 +189,7 @@ font-family: helvetica-neue;}
     transition: background-size 400ms;
   }
 
-#card a:hover, .news-card a:hover{
+#card a:hover, .news-card a:hover, .card-space a:hover{
     background-size: 0 0px, 100% 2px;
   }
 
@@ -216,6 +216,8 @@ font-family: helvetica-neue;}
     font-family: helvetica-neue;
     padding: 15px;
     border-radius: 10px;
+    transition: scale 0.25s ease-in-out;
+    scale: 0.9;
 }
 
 .news-card h5{
@@ -235,4 +237,24 @@ font-family: helvetica-neue;}
 
 .news-card a{
     color: inherit;
+}
+
+.news-card:hover{
+    scale: 1;
+}
+
+.card-space{
+    padding: 10px;
+    border: 1px solid #323232;
+    border-radius: 10px;
+}
+
+.card-space h3{
+    max-width: 300px
+;
+
+}
+.card-space a{
+    color: #323232;
+    text-decoration: none;
 }
