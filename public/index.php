@@ -93,7 +93,7 @@
         </div>
     </div>
     </div>
-<div class="container-fluid">
+<div class="container-fluid" data-aos="zoom-in">
     <div class="row ms-4  mt-5 justify-content-evenly">
        <div class="col-3">
         <div class="news-card">
@@ -114,18 +114,53 @@
             <div class="news-card"></div>
         </div>
     </div>
-
-</div>
-<div class="row mt-3 mb-4 justify-content-center">
-    <div class="col-3">
-        <div class="card-space">
-            <h3>For more news on space, space news and launches, check out:</h3>
-            <a href="" class="bold-text">News ></a>
+    <div class="row mt-3 mb-4 justify-content-center">
+        <div class="col-3">
+            <div class="card-space">
+                <h3>For more news on space, space news and launches, check out:</h3>
+                <a href="" class="bold-text">News ></a>
+            </div>
         </div>
     </div>
 </div>
 <h3 class="astro-view">astro-view</h3>
-<script type='module' src='js/index.js'></script>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-3">
+            <h1 class="bold-text">Launches</h1>
+        </div>
+    </div>
+    <div class="row mt-3 justify-content-center">
+        <div class="col-4 mt-5 justify-self-center">
+            <div class="slider justify-self-center">
+                <a href="#slide-1">1</a>
+                <a href="#slide-2">2</a>
+                <a href="#slide-3">3</a>
+                <a href="#slide-4">4</a>
+                <a href="#slide-5">5</a>
+
+                <div class="slides">
+                <div id="slide-1">
+                    1
+                </div>
+                <div id="slide-2">
+                    2
+                </div>
+                <div id="slide-3">
+                    3
+                </div>
+                <div id="slide-4">
+                    4
+                </div>
+                <div id="slide-5">
+                    5
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script type='module' src='js/script.js'></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
 <script>

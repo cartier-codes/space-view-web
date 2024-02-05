@@ -41,7 +41,23 @@ function createNewsCard(fetchedData){
   })
 }
 
-
+function fetchNewsArticles() {
+   const apiUrl = 'https://api.spaceflightnewsapi.net/v4/articles/?limit=5';
+ 
+   fetch(apiUrl)
+     .then(response => {
+       if (!response.ok) {
+         throw new Error(`HTTP error! Status: ${response.status}`);
+       }
+       return response.json();
+     })
+     .then(data => {
+       createNewsCard(data);
+     })
+     .catch(error => {
+       console.error('Error:', error);
+     });
+ }
 
 
 
@@ -65,22 +81,6 @@ setTimeout(typewriter('WHAT IS SPACE?','intro'),1000)
  },1100)
 
 setInterval(changeColor, 300)
-function fetchNewsArticles() {
-   const apiUrl = 'https://api.spaceflightnewsapi.net/v4/articles/?limit=5';
- 
-   fetch(apiUrl)
-     .then(response => {
-       if (!response.ok) {
-         throw new Error(`HTTP error! Status: ${response.status}`);
-       }
-       return response.json();
-     })
-     .then(data => {
-       createNewsCard(data);
-     })
-     .catch(error => {
-       console.error('Error:', error);
-     });
- }
+
 fetchNewsArticles()
 })

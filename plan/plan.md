@@ -4,12 +4,12 @@ space view will be a space themed app based around the planets, famous stars, th
 <b>Sections:</b>
 -The planets:
     -How I imagine it is as a ticket system, you put your ticket in the ticket machine, you then go off to that planet and learn some fun facts about the planet, history of how the planet was discovered
-
+Done
     Method:
         -Add button for the tickets,
         -Once pressed, a sort of form comes up, i.e to and from times in light years etc.
         -Once submitted you will have a ticket, which will have a button to go somehwere.
-
+Done
         -Once pressed, the ticket goes in the machine using the perspective property, a video with a loading animation comes up and then you arrive at the planet, with it spinning in the background. Then a couple seconds later, a sidebar pops from the right with the facts of the planet.  I imagine the facts having a typing animation.
             sidebar code:
                 ```
@@ -50,4 +50,5 @@ Things that need to be done:
     -Index
 Plan for 21/1/2024:
 -Start the index. 
+
  
