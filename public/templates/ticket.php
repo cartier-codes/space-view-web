@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  <a href="../index.php">HOME</a>
   <div class="container">
     <div id="backward-effect">
       <button id="trigger-button">Trigger</button>

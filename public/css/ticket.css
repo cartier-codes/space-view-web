@@ -11,7 +11,10 @@
     src: url('../fonts/poppins.regular.ttf');
 }
 
-
+@font-face {
+    font-family: space-mono;
+    src: url('../fonts/SpaceMono-Regular.ttf');
+}
 body {
     display: grid;
     place-items: center;
@@ -421,4 +424,16 @@ font-family: poppins ;
     width: 100px;
     scale: 2.5;
     left: 200px;
+}
+
+a{
+    text-decoration: none;
+    font-family: space-mono;
+    color: white;
+    transition: scale 0.15s ease-in-out;
+    
+}
+
+a:hover{
+    scale: 1.25;
 }
