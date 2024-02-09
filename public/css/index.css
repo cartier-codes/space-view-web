@@ -417,3 +417,7 @@ right: 0;
     width: 450px;
     height: 250px;
 }
+.slide-content p{
+  max-width: 450px;
+  font-size: 14px;
+}

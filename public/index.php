@@ -150,46 +150,61 @@
                 <h1 class="bold-text text-center">Use your left and right arrow keys < > </h1>
             </div>
         </div>
-        <div class="slide-wrap">
+        <div class="slide-wrap " data-aos="zoom-in">
             <div class="slideshow">
                 <div class="slide-entry">
                     <div class="slide-content">
-                        <h2>Mixed Content</h2>
-                        <img style="float:right" src="https://via.placeholder.com/350x150" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id repudiandae magnam amet architecto, aliquam unde, fugit in optio, vitae natus debitis minima tempore adipisci placeat esse quasi ullam incidunt a et sit suscipit, impedit nobis.</p>
+                        <h2></h2>
+                        <img style="float:right" src="" alt="">
+                        <h4 class="mb-3"></h4>
+                        <p class="text"></p>
+                        <h3></h3>
                     </div>
                 </div>
                 <div class="slide-entry">
                     <div class="slide-content">
                         <h2>Mixed Content</h2>
-                        <img style="float:right" src="https://via.placeholder.com/350x150" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id repudiandae magnam amet architecto, aliquam unde, fugit in optio, vitae natus debitis minima tempore adipisci placeat esse quasi ullam incidunt a et sit suscipit, impedit nobis.</p>
+                        <img style="float:right" src="" alt="">
+                        <h4 class="mb-3"></h4>
+                        <p class="text"></p>
+                        <h3></h3>
                     </div>
                 </div>
                 <div class="slide-entry">
                     <div class="slide-content">
                         <h2>Mixed Content</h2>
-                        <img style="float:right" src="img/test-index-img.jpg" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id repudiandae magnam amet architecto, aliquam unde, fugit in optio, vitae natus debitis minima tempore adipisci placeat esse quasi ullam incidunt a et sit suscipit, impedit nobis.</p>
+                        <img style="float:right" src="" alt="">
+                        <h4 class="mb-3"></h4>
+                        <p class="text"></p>
+                        <h3></h3>
                     </div>
                 </div>
                 <div class="slide-entry">
                     <div class="slide-content">
                         <h2>Mixed Content</h2>
-                        <img style="float:right" src="https://via.placeholder.com/350x150" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id repudiandae magnam amet architecto, aliquam unde, fugit in optio, vitae natus debitis minima tempore adipisci placeat esse quasi ullam incidunt a et sit suscipit, impedit nobis.</p>
+                        <img style="float:right" src="" alt="">
+                        <h4 class="mb-3"></h4>
+                        <p></p>
+                        <h3></h3>
                     </div>
                 </div>
                 <div class="slide-entry">
                     <div class="slide-content">
                         <h2>Mixed Content</h2>
-                        <img style="float:right" src="https://via.placeholder.com/350x150" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id repudiandae magnam amet architecto, aliquam unde, fugit in optio, vitae natus debitis minima tempore adipisci placeat esse quasi ullam incidunt a et sit suscipit, impedit nobis.</p>
+                        <img style="float:right" src="" alt="">
+                        <h4 class="mb-3"></h4>
+                        <p class="text"></p>
+                        <h3></h3>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <footer>
+        <div class="container">
+            <div class="row justify-content"></div>
+        </div>
+    </footer>
     </div>
     <script type='module' src='js/script.js'></script>
 
