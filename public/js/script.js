@@ -1,83 +1,81 @@
-import typewriter from "../templates/typewriter.js"
-  window.addEventListener('beforeunload', function () {
-      window.scrollTo({
-        top: 0,
-        behavior: 'auto' // Use 'auto' for immediate jump to the top on refresh
-      });
-    });
-function changeColor(){
-   let headers = document.querySelectorAll('.astro-view')
-   const hexColors = ['#FF5733', '#33FF57', '#5733FF', '#FF33A1', '#A1FF33', '#33A1FF', '#FF3362', '#62FF33', '#3362FF', '#FF3333', '#33FFC5', '#C533FF', '#FFC533', '#5333FF', '#FF33D1'];
-   for(let i = 0; i < headers.length; i++){
-      headers[i].style.color = hexColors[Math.floor(Math.random()*hexColors.length)]
-   }
+import typewriter from "../templates/typewriter.js";
+
+let resizedSlideHeight;
+let slides;
+
+function changeColor() {
+  let headers = document.querySelectorAll('.astro-view');
+  const hexColors = ['#FF5733', '#33FF57', '#5733FF', '#FF33A1', '#A1FF33', '#33A1FF', '#FF3362', '#62FF33', '#3362FF', '#FF3333', '#33FFC5', '#C533FF', '#FFC533', '#5333FF', '#FF33D1'];
+  for (let i = 0; i < headers.length; i++) {
+    headers[i].style.color = hexColors[Math.floor(Math.random() * hexColors.length)];
+  }
 }
 
-function createNewsCard(fetchedData){
-  const newsCards =Array.from(document.querySelectorAll('.news-card'))
-  newsCards.forEach((card,index)=>{
+function createNewsCard(fetchedData) {
+  const newsCards = Array.from(document.querySelectorAll('.news-card'));
+  newsCards.forEach((card, index) => {
+    let img = document.createElement('img');
+    img.classList.add('img-fluid');
+    img.src = fetchedData.results[index]['image_url'];
+    newsCards[index].appendChild(img);
 
-   let img = document.createElement('img')
-   img.classList.add('img-fluid')
-   img.src = fetchedData.results[index]['image_url']
-   newsCards[index].appendChild(img)
+    let h5 = document.createElement('h5');
+    h5.innerHTML = fetchedData.results[index]['published_at'].substring(0, 10);
+    newsCards[index].appendChild(h5);
 
-   let h5  = document.createElement('h5')
-   h5.innerHTML = fetchedData.results[index]['published_at'].substring(0,10)
-   newsCards[index].appendChild(h5)
+    let h2 = document.createElement('h2');
+    h2.innerHTML = fetchedData.results[index]['title'];
+    newsCards[index].appendChild(h2);
 
-   let h2 = document.createElement('h2')
-   h2.innerHTML = fetchedData.results[index]['title']
-   newsCards[index].appendChild(h2)
+    let p = document.createElement('p');
+    p.innerHTML = fetchedData.results[index]['summary'];
+    newsCards[index].appendChild(p);
 
-   let p = document.createElement('p')
-   p.innerHTML = fetchedData.results[index]['summary']
-   newsCards[index].appendChild(p)
-
-   let a  = document.createElement('a')
-   a.href = fetchedData.results[index]['url']
-   a.innerHTML = 'Find out more >'
-   newsCards[index].appendChild(a)
-  })
+    let a = document.createElement('a');
+    a.href = fetchedData.results[index]['url'];
+    a.innerHTML = 'Find out more >';
+    newsCards[index].appendChild(a);
+  });
 }
 
 function fetchNewsArticles() {
-   const apiUrl = 'https://api.spaceflightnewsapi.net/v4/articles/?limit=5';
- 
-   fetch(apiUrl)
-     .then(response => {
-       if (!response.ok) {
-         throw new Error(`HTTP error! Status: ${response.status}`);
-       }
-       return response.json();
-     })
-     .then(data => {
-       createNewsCard(data);
-     })
-     .catch(error => {
-       console.error('Error:', error);
-     });
- }
-
- function fetchSpaceLaunches(){
-  const apiUrl = "https://ll.thespacedevs.com/2.2.0/launch/?limit=5"
+  const apiUrl = 'https://api.spaceflightnewsapi.net/v4/articles/?limit=5';
 
   fetch(apiUrl)
-    .then(response =>{
-      if(!response.ok){
-        throw new Error(`HTTP error! Status: ${response.status}`)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
       }
-      return response.json()
+      return response.json();
     })
-    .then(data =>{
-      console.log(data)
-      })
-    .catch(error =>{
-      console.error('Error', error)})
- }
+    .then(data => {
+      createNewsCard(data);
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+}
 
-let data = {
-  "count": 7160,
+function fetchSpaceLaunches() {
+  const apiUrl = "https://ll.thespacedevs.com/2.2.0/launch/?limit=5";
+
+  fetch(apiUrl)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then(data => {
+      console.log(data);
+    })
+    .catch(error => {
+      console.error('Error', error);
+    });
+}
+
+let data ={
+  "count": 7164,
   "next": "https://ll.thespacedevs.com/2.2.0/launch/?limit=5&offset=5",
   "previous": null,
   "results": [
@@ -341,8 +339,8 @@ let data = {
           "description": null,
           "map_image": "https://spacelaunchnow-prod-east.nyc3.digitaloceanspaces.com/media/launch_images/location_12_20200803142519.jpg",
           "timezone_name": "America/New_York",
-          "total_launch_count": 932,
-          "total_landing_count": 45
+          "total_launch_count": 933,
+          "total_landing_count": 46
         },
         "country_code": "USA",
         "map_image": "https://spacelaunchnow-prod-east.nyc3.digitaloceanspaces.com/media/launch_images/pad_118_20200803143338.jpg",
@@ -435,8 +433,8 @@ let data = {
           "description": null,
           "map_image": "https://spacelaunchnow-prod-east.nyc3.digitaloceanspaces.com/media/launch_images/location_12_20200803142519.jpg",
           "timezone_name": "America/New_York",
-          "total_launch_count": 932,
-          "total_landing_count": 45
+          "total_launch_count": 933,
+          "total_landing_count": 46
         },
         "country_code": "USA",
         "map_image": "https://spacelaunchnow-prod-east.nyc3.digitaloceanspaces.com/media/launch_images/pad_space_launch_complex_26a_20210830170946.jpg",
@@ -529,8 +527,8 @@ let data = {
           "description": null,
           "map_image": "https://spacelaunchnow-prod-east.nyc3.digitaloceanspaces.com/media/launch_images/location_12_20200803142519.jpg",
           "timezone_name": "America/New_York",
-          "total_launch_count": 932,
-          "total_landing_count": 45
+          "total_launch_count": 933,
+          "total_landing_count": 46
         },
         "country_code": "USA",
         "map_image": "https://spacelaunchnow-prod-east.nyc3.digitaloceanspaces.com/media/launch_images/pad_118_20200803143338.jpg",
@@ -553,32 +551,84 @@ let data = {
     }
   ]
 }
- function testSpaceLaunches(data){
-  console.log(data.results[2]['image'])
- }
 
+function testSpaceLaunches(data) {
+  let launches = data['results'];
+  let headings = document.querySelectorAll('.slide-content h2');
 
+  launches.forEach((launch,index)=>{
+    headings[index].innerHTML = launch['name'];
+  })
+}
 
-document.addEventListener('DOMContentLoaded', ()=>{
+document.addEventListener('DOMContentLoaded', () => {
+  let intro = document.getElementById('intro');
+  let row1 = document.getElementById('img-grid-1');
+  let row2 = document.getElementById('img-grid-2');
 
-let intro = document.getElementById('intro')
-let row1 = document.getElementById('img-grid-1')
-let row2 = document.getElementById('img-grid-2')
-
-setTimeout(typewriter('WHAT IS SPACE?','intro'),1000)
- setTimeout(()=>{
+  setTimeout(typewriter('WHAT IS SPACE?', 'intro'), 1000);
+  setTimeout(() => {
     row1.classList.add('visible');
     row2.classList.add('visible');
- },1250)
- setTimeout(()=>{
-    intro.scrollIntoView({behavior:'smooth'});
- },2000)
- setTimeout(()=>{
-    document.body.style.overflowY = 'auto'
- },1100)
+  }, 1250);
+  setTimeout(() => {
+    intro.scrollIntoView({ behavior: 'smooth' });
+  }, 2000);
+  setTimeout(() => {
+    document.body.style.overflowY = 'auto';
+  }, 1100);
 
-setInterval(changeColor, 300)
+  setInterval(changeColor, 300);
 
-fetchNewsArticles()
-testSpaceLaunches(data)
-})
+  fetchNewsArticles();
+  testSpaceLaunches(data);
+
+  const slideshow = document.querySelector('.slide-wrap');
+
+  if (slideshow != null) {
+    slides = document.querySelectorAll('.slide-entry');
+    let slideCount = slides.length;
+    let currentSlide = 0;
+    let slideHeight = null;
+    let initialHeight = slides[0].clientHeight;
+
+    slides[0].classList.add('active');
+
+    function moveToSlide(n) {
+      slides[currentSlide].className = 'slide-entry';
+      currentSlide = (n + slideCount) % slideCount;
+      slides[currentSlide].className = 'slide-entry active';
+      slideHeight = slides[currentSlide].clientHeight;
+      slideshow.style.height = slideHeight + 'px';
+      window.addEventListener('resize', function () {
+        resizedSlideHeight = slides[currentSlide].clientHeight;
+        slideshow.style.height = resizedSlideHeight + 'px';
+      });
+    }
+
+    function nextSlide(e) {
+      moveToSlide(currentSlide + 1);
+      let code = e.key;
+      if (code === 'ArrowRight') {
+        moveToSlide(currentSlide + 1);
+      }
+    }
+
+    function prevSlide(e) {
+      moveToSlide(currentSlide - 1);
+      let code = e.key;
+      if (code === 'ArrowLeft') {
+        moveToSlide(currentSlide - 1);
+      }
+    }
+
+    document.addEventListener('keydown', function (e) {
+      let code = e.key;
+      if (code === 'ArrowRight') {
+        nextSlide(e);
+      } else if (code === 'ArrowLeft') {
+        prevSlide(e);
+      }
+    });
+  }
+});
