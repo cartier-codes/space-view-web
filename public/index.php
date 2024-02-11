@@ -113,23 +113,23 @@
         </div>
     </div>
     <div class="container-fluid" data-aos="zoom-in">
-        <div class="row ms-4  mt-5 justify-content-evenly">
-            <div class="col-3">
+        <div class="row ms-4  mt-5 justify-content-md-evenly">
+            <div class="col-md-3 col-12">
                 <div class="news-card">
                 </div>
             </div>
-            <div class="col-3 align-self-end">
+            <div class="col-md-3 col-12 align-self-md-end">
                 <div class="news-card"></div>
             </div>
-            <div class="col-3">
+            <div class="col-md-3 col-12">
                 <div class="news-card"></div>
             </div>
         </div>
         <div class="row mt-3 justify-content-evenly">
-            <div class="col-3">
+            <div class="col-md-3 col-12">
                 <div class="news-card"></div>
             </div>
-            <div class="col-3">
+            <div class="col-md-3 col-12">
                 <div class="news-card"></div>
             </div>
         </div>
@@ -145,6 +145,13 @@
     <h3 class="astro-view">astro-view</h3>
     <div class="container">
         <div class="row justify-content-center">
+            <h1 class="text-center bold-text">APOD</h1>
+            <h1 class="text-center bold-text" id="apod-date"></h1>
+            <h1 class="text-center bold-text"></h1>
+
+        </div>
+        <div class="row justify-content-center"><img src="" alt="" class="img-fluid" id="apod"></div>
+        <div class="row justify-content-center mt-4">
             <div class="col-8">
                 <h1 class="bold-text text-center">Launches</h1>
                 <h1 class="bold-text text-center">Use your left and right arrow keys < > </h1>
@@ -163,7 +170,7 @@
                 </div>
                 <div class="slide-entry">
                     <div class="slide-content">
-                        <h2>Mixed Content</h2>
+                        <h2></h2>
                         <img style="float:right" src="" alt="">
                         <h4 class="mb-3"></h4>
                         <p class="text"></p>
@@ -172,7 +179,7 @@
                 </div>
                 <div class="slide-entry">
                     <div class="slide-content">
-                        <h2>Mixed Content</h2>
+                        <h2></h2>
                         <img style="float:right" src="" alt="">
                         <h4 class="mb-3"></h4>
                         <p class="text"></p>
@@ -181,7 +188,7 @@
                 </div>
                 <div class="slide-entry">
                     <div class="slide-content">
-                        <h2>Mixed Content</h2>
+                        <h2></h2>
                         <img style="float:right" src="" alt="">
                         <h4 class="mb-3"></h4>
                         <p></p>
@@ -190,7 +197,7 @@
                 </div>
                 <div class="slide-entry">
                     <div class="slide-content">
-                        <h2>Mixed Content</h2>
+                        <h2></h2>
                         <img style="float:right" src="" alt="">
                         <h4 class="mb-3"></h4>
                         <p class="text"></p>
@@ -200,11 +207,9 @@
             </div>
         </div>
     </div>
-    <footer>
-        <div class="container">
-            <div class="row justify-content"></div>
-        </div>
-    </footer>
+    <br>
+    
+    
     </div>
     <script type='module' src='js/script.js'></script>
 

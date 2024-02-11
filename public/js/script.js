@@ -80,6 +80,26 @@ function fetchSpaceLaunches() {
     });
 }
 
+function fetchAPOD(){
+  const img = document.getElementById('apod');
+  const apiUrl = 'https://api.nasa.gov/planetary/apod?api_key=3BClU0vD21KkUtNwDQgq4CymUxjUGOmZg6OV80SC'
+  fetch(apiUrl)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then(data => {
+      let imgSrc = data['hdurl']
+      img.src = imgSrc
+      console.log(data)
+    })
+    .catch(error => {
+      console.error('Error', error);
+    });
+}
+
 
 
 function makeLaunchSlides(data) {
@@ -89,6 +109,10 @@ function makeLaunchSlides(data) {
   let mission = document.querySelectorAll('.slide-content h4')
   let outcome = document.querySelectorAll('.slide-content h3 ')
   let images = document.querySelectorAll('.slide-content img');
+
+  outcome.forEach((one)=>{
+    one.classList.add('text')
+  })
 
   
   launches.forEach((launch,index)=>{
@@ -180,4 +204,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 fetchSpaceLaunches()
+fetchAPOD()
 });
