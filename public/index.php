@@ -133,7 +133,7 @@
                 <div class="news-card"></div>
             </div>
         </div>
-        <div class="row mt-3 mb-4 justify-content-center">
+        <div class="row mt-3 mb-4 justify-content-center" data-aos="zoom-in">
             <div class="col-3">
                 <div class="card-space">
                     <h3>For more news on space, space news and launches, check out:</h3>
@@ -143,20 +143,28 @@
         </div>
     </div>
     <h3 class="astro-view">astro-view</h3>
-    <div class="container">
+    <h1 class="bold-text text-center">APOD</h1>
+    <div class="container pt-4" id="apod-wrapper">
         <div class="row justify-content-center">
-            <h1 class="text-center bold-text">APOD</h1>
-            <h1 class="text-center bold-text" id="apod-date"></h1>
-            <h1 class="text-center bold-text"></h1>
-
+            <h1 class="text-center bold-text" id="apod-title"></h1>
         </div>
-        <div class="row justify-content-center"><img src="" alt="" class="img-fluid" id="apod"></div>
-        <div class="row justify-content-center mt-4">
+        <div class="row justify-content-center pb-3">
+            <div class="col-4"><img src="" alt="" class="img-fluid" id="apod"></div>
+            <div class="col-6 align-self-center"><p id="apod-description"></p></div>
+        </div>
+        <div class="row justify-content-center">
+            <h1 class="text-center bold-text" id="apod-date"></h1>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
             <div class="col-8">
                 <h1 class="bold-text text-center">Launches</h1>
                 <h1 class="bold-text text-center">Use your left and right arrow keys < > </h1>
             </div>
         </div>
+    </div>
+    <div class="container">
         <div class="slide-wrap " data-aos="zoom-in">
             <div class="slideshow">
                 <div class="slide-entry">
@@ -206,6 +214,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <br>
     

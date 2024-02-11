@@ -82,7 +82,11 @@ function fetchSpaceLaunches() {
 
 function fetchAPOD(){
   const img = document.getElementById('apod');
+  const title = document.getElementById('apod-title')
+  const date = document.getElementById('apod-date')
+  const description = document.getElementById('apod-description');
   const apiUrl = 'https://api.nasa.gov/planetary/apod?api_key=3BClU0vD21KkUtNwDQgq4CymUxjUGOmZg6OV80SC'
+
   fetch(apiUrl)
     .then(response => {
       if (!response.ok) {
@@ -91,9 +95,10 @@ function fetchAPOD(){
       return response.json();
     })
     .then(data => {
-      let imgSrc = data['hdurl']
-      img.src = imgSrc
-      console.log(data)
+      img.src = data['hdurl']
+      title.innerHTML = data['title']
+      date.innerHTML = data['date']
+      description.innerHTML = data['explanation']
     })
     .catch(error => {
       console.error('Error', error);

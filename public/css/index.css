@@ -430,4 +430,12 @@ right: 0;
 #apod{
   width: 400px;
   height: 400px;
+  float: right;
+}
+#apod-wrapper{
+  border: 1px solid #323232;
+  border-radius: 10px;
+}
+#apod-description{
+  font-family: space-mono;
 }
