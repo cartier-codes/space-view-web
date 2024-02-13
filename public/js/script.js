@@ -62,24 +62,6 @@ function fetchNewsArticles() {
     });
 }
 
-function fetchSpaceLaunches() {
-  const apiUrl = `https://ll.thespacedevs.com/2.2.0/launch/?limit=5&window_start__gt=${getDate()}`
-
-  fetch(apiUrl)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`);
-      }
-      return response.json();
-    })
-    .then(data => {
-      makeLaunchSlides(data)
-    })
-    .catch(error => {
-      console.error('Error', error);
-    });
-}
-
 function fetchAPOD(){
   const img = document.getElementById('apod');
   const title = document.getElementById('apod-title')
@@ -107,36 +89,6 @@ function fetchAPOD(){
 
 
 
-function makeLaunchSlides(data) {
-  let launches = data['results'];
-  let headings = document.querySelectorAll('.slide-content h2');
-  let description = document.querySelectorAll('.slide-content p')
-  let mission = document.querySelectorAll('.slide-content h4')
-  let outcome = document.querySelectorAll('.slide-content h3 ')
-  let images = document.querySelectorAll('.slide-content img');
-
-  outcome.forEach((one)=>{
-    one.classList.add('text')
-  })
-
-  
-  launches.forEach((launch,index)=>{
-    headings[index].innerHTML = launch['name'];
-    description[index].innerHTML = launch['mission']['description']
-    description[index].innerHTML += '<br> <br>'+launch['status']['description']
-
-    mission[index].innerHTML = 'Mission: ' + launch['mission']['name']
-
-    outcome[index].innerHTML = 'Result: ' + launch['status']['name']   
-    if(launch['image'] != null){
-      images[index].src = launch['image']
-    }
-    else{
-      images[index].src = 'img/logo.png'
-    }
-
-  })
-}
 
 document.addEventListener('DOMContentLoaded', () => {
   let intro = document.getElementById('intro');
@@ -159,55 +111,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
   fetchNewsArticles()
 
-
-  const slideshow = document.querySelector('.slide-wrap');
-
-  if (slideshow != null) {
-    slides = document.querySelectorAll('.slide-entry');
-    let slideCount = slides.length;
-    let currentSlide = 0;
-    let slideHeight = null;
-    let initialHeight = slides[0].clientHeight;
-
-    slides[0].classList.add('active');
-
-    function moveToSlide(n) {
-      slides[currentSlide].className = 'slide-entry';
-      currentSlide = (n + slideCount) % slideCount;
-      slides[currentSlide].className = 'slide-entry active';
-      slideHeight = slides[currentSlide].clientHeight;
-      slideshow.style.height = slideHeight + 'px';
-      window.addEventListener('resize', function () {
-        resizedSlideHeight = slides[currentSlide].clientHeight;
-        slideshow.style.height = resizedSlideHeight + 'px';
-      });
-    }
-
-    function nextSlide(e) {
-      moveToSlide(currentSlide + 1);
-      let code = e.key;
-      if (code === 'ArrowRight') {
-        moveToSlide(currentSlide + 1);
-      }
-    }
-
-    function prevSlide(e) {
-      moveToSlide(currentSlide - 1);
-      let code = e.key;
-      if (code === 'ArrowLeft') {
-        moveToSlide(currentSlide - 1);
-      }
-    }
-
-    document.addEventListener('keydown', function (e) {
-      let code = e.key;
-      if (code === 'ArrowRight') {
-        nextSlide(e);
-      } else if (code === 'ArrowLeft') {
-        prevSlide(e);
-      }
-    });
-  }
-fetchSpaceLaunches()
 fetchAPOD()
 });

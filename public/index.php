@@ -35,7 +35,7 @@
         <div class="col-2"><img src="img/index/img-7.jpg" alt="" class="img-fluid"></div>
     </div>
     <div data-aos="zoom-in-up" id="definition-wrapper">
-        <h1 id='definition'>the universe is all of space and time and their contents,</h1>
+        <h1 id='definition' class="bold-text">the universe is all of space and time and their contents,</h1>
         <h1 class="bold-text ms-2">like a cosmic attic filled with stars and galaxies, and the occasional</h1>
         <h1 class="bold-text ms-2">lost sock from a rogue black hole.</h1>
     </div>

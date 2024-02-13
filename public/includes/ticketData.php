@@ -28,7 +28,8 @@ $spaceCraft = spaceCraft();
 
 $ticketData = array(
     "Mars"=>array("Seat Number"=> $seatNumber, "Distance" => "356,000,000 KM", "Gravity"=>"3.71 m/s ^2", "Gate" => $gate, "spaceCraft"=> $spaceCraft),
-    "Mercury"=>array("Seat Number"=> $seatNumber, "Distance" => "160,000,000 ,KM", "Gravity"=>"3.71 m/s ^2", "Gate" => $gate, "spaceCraft" => $spaceCraft), "Venus"=>array("Seat Number"=> $seatNumber, "Distance" => "40,000,000 KM", "Gravity"=>"8.87 m/s ^2", "Gate" => $gate, "spaceCraft" => $spaceCraft ),
+    "Mercury"=>array("Seat Number"=> $seatNumber, "Distance" => "160,000,000 ,KM", "Gravity"=>"3.71 m/s ^2", "Gate" => $gate, "spaceCraft" => $spaceCraft),
+     "Venus"=>array("Seat Number"=> $seatNumber, "Distance" => "40,000,000 KM", "Gravity"=>"8.87 m/s ^2", "Gate" => $gate, "spaceCraft" => $spaceCraft ),
     "Neptune"=>array("Seat Number"=> $seatNumber, "Distance" => "4,560,000,000 KM", "Gravity"=>"11.15 m/s ^2", "Gate" => $gate, "spaceCraft => $spaceCraft"),
     "Saturn"=>array("Seat Number"=> $seatNumber, "Distance" => "1,560,000,000 KM", "Gravity"=>"10.45 m/s ^2", "Gate" => $gate, "spaceCraft" => $spaceCraft),
     "Uranus"=>array("Seat Number"=> $seatNumber, "Distance" => "2,856,000,000 KM", "Gravity"=>"8.87 m/s ^2", "Gate" => $gate, "spaceCraft"=> $spaceCraft),
