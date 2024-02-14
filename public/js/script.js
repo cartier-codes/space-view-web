@@ -135,8 +135,11 @@ document.addEventListener('DOMContentLoaded', () => {
   let intro = document.getElementById('intro');
   let row1 = document.getElementById('img-grid-1');
   let row2 = document.getElementById('img-grid-2');
+  let basket = document.getElementById('basket')
   const darkModeButton = document.getElementById('dark-mode')
 
+  basket.style.display = 'none';
+  
   setTimeout(typewriter('WHAT IS SPACE?', 'intro'), 1000);
   setTimeout(() => {
     row1.classList.add('visible');

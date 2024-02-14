@@ -62,5 +62,10 @@ font-family: helvetica-neue;}
 .nav-row button{
     background-color: transparent;
     border: 0;
+    transition: scale 0.25s ease-in-out;
 
+}
+
+.nav-row button:hover{
+    scale: 1.1;
 }

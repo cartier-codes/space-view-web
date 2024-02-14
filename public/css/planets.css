@@ -1,0 +1,35 @@
+@font-face {
+    font-family: helvetica-neue;
+    src: url('../fonts/helvetica-neue.ttf');
+}
+@font-face {
+    font-family: helvetica-reg;
+    src: url('../fonts/HelveticaNeue-Medium.otf');
+}
+@font-face {
+    font-family: space-mono;
+    src: url('../fonts/SpaceMono-Regular.ttf');
+}
+
+@font-face {
+    font-family: bold-poppins;
+    src: url(../fonts/Poppins-SemiBold.ttf);
+}
+
+.custom-column{
+    height: 500px;
+}
+#title{
+    font-family: bold-poppins;
+    font-size: 64px;
+}
+
+#title-description{
+    max-width: 350px;
+}
+.bold-text{
+    font-family: helvetica-neue;
+}
+.text{
+    font-family: helvetica-reg ;
+}

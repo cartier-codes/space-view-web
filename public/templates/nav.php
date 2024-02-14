@@ -10,6 +10,7 @@
                     <li><a href="">history</a></li>
                     <li><a href="">news</a></li>
                     <li><button id="dark-mode">dark mode<button></li>
+                    <li id="basket"><a href=""><img src="img/icons8-shopping-bag-24.png" alt=""></a></li>
                 </ul>
             </div>
         </nav> 
