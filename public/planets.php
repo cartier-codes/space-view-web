@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,8 +17,9 @@
     <div class="container">
         <div class="row">
             <div class="col-4 ps-5 pt-4 custom-column">
-                <h1 class="ps-5" id="title">Visit <br>Earth:</h1>
+                <h1 class="ps-5" id="title">visit <span id="planet">earth:</span></h1>
                 <p class="ps-5 pt-3" id="title-description">The Earth tour features historical reenactments, futuristic cityscapes, and global weather control</p>
+                <button id="changeStuff">Change</button>
                 
             </div>
             <div class="col-4 custom-column"></div>
