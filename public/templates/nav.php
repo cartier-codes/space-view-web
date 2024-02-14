@@ -9,6 +9,7 @@
                     <li><a href="">stars</a></li>
                     <li><a href="">history</a></li>
                     <li><a href="">news</a></li>
+                    <li><button id="dark-mode">dark mode<button></li>
                 </ul>
             </div>
         </nav> 

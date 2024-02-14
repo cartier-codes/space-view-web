@@ -13,19 +13,10 @@
 <body>
     <?php include 'templates/nav.php'; ?>
     <div class="container">
-        <div class="row justify-content-center">
-            <h1><span data-aos="">/span><span>E</span><span>P</span>T<span>U</span><span>U</span><span>N</span><span>E</span></h1>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-3"></div>
-            <div class="col-3 justify-content-center">
-                <img src="img/Rotating_earth_animated_transparent.gif" alt="" class="w-40 h-50">
-            </div>
-            <div class="col-3"></div>
-        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script type="module" src="js/planets.js"></script>
     <script>AOS.init()</script>
 </body>
 </html>

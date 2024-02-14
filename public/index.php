@@ -36,23 +36,23 @@
     </div>
     <div data-aos="zoom-in-up" id="definition-wrapper">
         <h1 id='definition' class="bold-text">the universe is all of space and time and their contents,</h1>
-        <h1 class="bold-text ms-2">like a cosmic attic filled with stars and galaxies, and the occasional</h1>
-        <h1 class="bold-text ms-2">lost sock from a rogue black hole.</h1>
+        <h1 class="bold-text ms-3">like a cosmic attic filled with stars and galaxies, and the occasional</h1>
+        <h1 class="bold-text ms-3">lost sock from a rogue black hole.</h1>
     </div>
     <div class="container" id='space-definition-wrapper'>
         <div class="row mt-5" id="space-definition">
             <div class="col-3 custom-column">
-                <p data-aos="fade-down-right">If the universe is everything in existence, the space is the empty void between everything. Outer space is the region outside of planet's atmosphere, and for Earth's inhabitants it starts 62 miles above sea level.</p>
-                <p data-aos="fade-up-right">The line separating the atmosphere and outer space is the Karman Line. "Outer space" and the "universe" are usually used synonymously; however outer space refers only to the area between planets, while universe encompasses everything.</p>
-                <p data-aos="fade-up">What is space? Where does it come from? Is there a creator? These are the questions that have plagued Man for hundreds of years, even before early astronomers in Ancient Babylonia up until now. The Babylonians used clay tablets, and these primitive diaries kept the night-by-night records of temple astronomers.</p>
+                <p data-aos="fade-down-right" class="text">If the universe is everything in existence, the space is the empty void between everything. Outer space is the region outside of planet's atmosphere, and for Earth's inhabitants it starts 62 miles above sea level.</p>
+                <p data-aos="fade-up-right" class="text">The line separating the atmosphere and outer space is the Karman Line. "Outer space" and the "universe" are usually used synonymously; however outer space refers only to the area between planets, while universe encompasses everything.</p>
+                <p data-aos="fade-up" class="text">What is space? Where does it come from? Is there a creator? These are the questions that have plagued Man for hundreds of years, even before early astronomers in Ancient Babylonia up until now. The Babylonians used clay tablets, and these primitive diaries kept the night-by-night records of temple astronomers.</p>
             </div>
             <div class="col-3 custom-column">
-                <p data-aos="fade-down-left">Over time, Babylonian astronomers could predict the behaviour of the moon and other planets and by 300BCE planetary behaviours were already foreseen. Likewise, Indian astronomy started in third millenium BCE, which was believed to create calendars. Chinese astronomy started around the sixth century BCE, in which they could accurately predict eclipses.</p>
-                <p data-aos='fade-up-right'>For more history, including the pioneers: <a href="" id="historylink">History ></a></p>
+                <p data-aos="fade-down-left" class="text">Over time, Babylonian astronomers could predict the behaviour of the moon and other planets and by 300BCE planetary behaviours were already foreseen. Likewise, Indian astronomy started in third millenium BCE, which was believed to create calendars. Chinese astronomy started around the sixth century BCE, in which they could accurately predict eclipses.</p>
+                <p data-aos='fade-up-right' class="text">For more history, including the pioneers: <a href="" id="historylink">history</a></p>
             </div>
             <div class="col-3 custom-column" data-aos="fade-down-left">
                 <h1 class="bold-text" id="pioneers">Pioneers:</h1>
-                <ul>
+                <ul class="text">
                     <li>Ptholemy</li>
                     <li>Aristarchus of Samos</li>
                     <li>Erastothenes</li>
@@ -76,7 +76,7 @@
                     <h6>Astronomer:</h6>
                 </div>
                 <div class="col-6 ms-5">
-                    <p>The Big Bang is a theory that the universe began at a single point, infinitely hot and full of energy. Then, it exploded; suddenly expanding the universe at the speed of light. This lasted about 10^-32 seconds, and then cosmic inflation came to a standstill. The standstill meant that a flood of matter and radiation began populating the unviverse with the stuff we know about today: particles, atoms, and the building blocks for stars and galaxies. How it started? That is a question no scientist has a definite answer to.</p>
+                    <p class="text">The Big Bang is a theory that the universe began at a single point, infinitely hot and full of energy. Then, it exploded; suddenly expanding the universe at the speed of light. This lasted about 10^-32 seconds, and then cosmic inflation came to a standstill. The standstill meant that a flood of matter and radiation began populating the unviverse with the stuff we know about today: particles, atoms, and the building blocks for stars and galaxies. How it started? That is a question no scientist has a definite answer to.</p>
                 </div>
                 <div class="col-2"></div>
             </div>
@@ -94,7 +94,7 @@
                     <h6>Astronomer:</h6>
                 </div>
                 <div class="col-6 ms-5">
-                    <p>Stars are giant balls of hot gas, mostly hydrogen and helium.</p>
+                    <p class="text">Stars are giant balls of hot gas, mostly hydrogen and helium.</p>
                 </div>
                 <div class="col-2"></div>
             </div>
@@ -106,11 +106,14 @@
             <div id="card">
                 <h4>For more information about the science behind space:</h4>
                 <ul>
-                    <li><a href="">Planets ></a></li>
-                    <li><a href="">Science ></a></li>
+                    <li><a href="">Planets</a></li>
+                <li><a href="">Science</a></li>
                 </ul>
             </div>
         </div>
+    </div>
+    <div class="row mt-5 justify-content-center">
+        <h1 class="bold-text text-center">THE LATEST NEWS</h1>
     </div>
     <div class="container-fluid" data-aos="zoom-in">
         <div class="row ms-4  mt-5 justify-content-md-evenly">
@@ -137,7 +140,7 @@
             <div class="col-3">
                 <div class="card-space">
                     <h3>For more news on space, space news and launches, check out:</h3>
-                    <a href="" class="bold-text">News ></a>
+                    <a href="" class="bold-text">News</a>
                 </div>
             </div>
         </div>
@@ -164,64 +167,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="slide-wrap " data-aos="zoom-in">
-            <div class="slideshow">
-                <div class="slide-entry">
-                    <div class="slide-content">
-                        <h2></h2>
-                        <img style="float:right" src="" alt="">
-                        <h4 class="mb-3"></h4>
-                        <p class="text"></p>
-                        <h3></h3>
-                    </div>
-                </div>
-                <div class="slide-entry">
-                    <div class="slide-content">
-                        <h2></h2>
-                        <img style="float:right" src="" alt="">
-                        <h4 class="mb-3"></h4>
-                        <p class="text"></p>
-                        <h3></h3>
-                    </div>
-                </div>
-                <div class="slide-entry">
-                    <div class="slide-content">
-                        <h2></h2>
-                        <img style="float:right" src="" alt="">
-                        <h4 class="mb-3"></h4>
-                        <p class="text"></p>
-                        <h3></h3>
-                    </div>
-                </div>
-                <div class="slide-entry">
-                    <div class="slide-content">
-                        <h2></h2>
-                        <img style="float:right" src="" alt="">
-                        <h4 class="mb-3"></h4>
-                        <p></p>
-                        <h3></h3>
-                    </div>
-                </div>
-                <div class="slide-entry">
-                    <div class="slide-content">
-                        <h2></h2>
-                        <img style="float:right" src="" alt="">
-                        <h4 class="mb-3"></h4>
-                        <p class="text"></p>
-                        <h3></h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <br>
-    
-    
-    </div>
     <script type='module' src='js/script.js'></script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
     <script>
         AOS.init()

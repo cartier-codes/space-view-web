@@ -13,9 +13,12 @@
 
 body{
     overflow-x: hidden;
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(153,0,241,1) 26%, rgba(0,0,0,1) 81%);
 }
-
+.dark-mode{
+  background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(70,0,110,1) 26%, rgba(146,74,187,1) 47%, rgba(0,0,0,1) 81%);
+    color: #e6e6fa !important;
+}
 .logo{
     max-width: 100px;
 }
@@ -27,7 +30,7 @@ body{
 
 
 .text{
-    font-family: helvetica-reg;
+    font-family: space-mono !important;
     font-weight: 300;
 }
 
@@ -67,7 +70,6 @@ padding-right: 15px;
 
 .custom-column{
     height: auto;
-    font-family: helvetica-reg;
 }
 #space-definition{
     justify-content: end;
@@ -86,9 +88,7 @@ padding-right: 15px;
     font-size: 20px;
   }
 
-  #interview p{
-    font-family: helvetica-reg;
-  }
+
 #card{
     border-radius: 20px;
     border: 1px solid #323232;
@@ -109,7 +109,7 @@ padding-right: 15px;
     border-radius: 5px;
 }
 #card a{
-    color: #323232;
+    color: inherit;
     font-family: helvetica-neue;
     text-decoration: none;
 }
@@ -142,6 +142,7 @@ font-family: helvetica-neue;}
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
     transition: background-size 400ms;
+    color: inherit ;
   }
 
 #card a:hover, .news-card a:hover, .card-space a:hover{
@@ -167,7 +168,8 @@ font-family: helvetica-neue;}
 }
 
 .news-card{
-    border: 1px solid #323232;
+    border: 1px solid;
+    border-color: #323232;
     font-family: helvetica-neue;
     padding: 15px;
     border-radius: 10px;
@@ -187,7 +189,8 @@ font-family: helvetica-neue;}
 }
 
 .news-card p{
-    font-size: 12px;
+    font-size: 13px;
+    font-family: space-mono !important;
 }
 
 .news-card a{
@@ -210,7 +213,6 @@ font-family: helvetica-neue;}
 
 }
 .card-space a{
-    color: #323232;
     text-decoration: none;
 }
 

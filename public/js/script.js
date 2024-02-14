@@ -1,7 +1,8 @@
 import typewriter from "../templates/typewriter.js";
 
-let resizedSlideHeight;
-let slides;
+let darkMode = false;
+
+
 
 function changeColor() {
   let headers = document.querySelectorAll('.astro-view');
@@ -87,13 +88,54 @@ function fetchAPOD(){
     });
 }
 
+function toggleDarkMode(){
+  darkMode = !darkMode;
+  console.log(darkMode);
+  const scienceCard = document.getElementById('card');
+  const newsCards = document.querySelectorAll('.news-card');
+  const spaceCard = document.querySelector('.card-space');
+  const apodWrapper = document.getElementById('apod-wrapper');
+  const logo = document.querySelector('.logo');
 
 
+  if (darkMode) {
+    newsCards.forEach(card => {
+      card.style.borderColor = '#e6e6fa';
+    });
+
+    scienceCard.style.borderColor = '#e6e6fa';
+    spaceCard.style.borderColor = '#e6e6fa';
+    apodWrapper.style.borderColor = '#e6e6fa';
+
+    document.body.style.background = 'linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(49,3,75,1) 26%, rgba(93,7,143,1) 47%, rgba(0,0,0,1) 81%)';
+    console.log(document.body.style.background);
+    document.body.style.color = '#e6e6fa';
+
+    logo.style.filter = 'invert(100%)';
+  }
+  else{
+    newsCards.forEach((card => {
+      card.style.borderColor = '#323232';
+    }));
+
+    scienceCard.style.borderColor = '#323232';
+    spaceCard.style.borderColor = '#323232';
+    apodWrapper.style.borderColor = '#323232';
+    document.body.style.background = '';
+    document.body.style.color = '#323232';
+
+    logo.style.filter = 'invert(0%)';
+
+  }
+
+
+}
 
 document.addEventListener('DOMContentLoaded', () => {
   let intro = document.getElementById('intro');
   let row1 = document.getElementById('img-grid-1');
   let row2 = document.getElementById('img-grid-2');
+  const darkModeButton = document.getElementById('dark-mode')
 
   setTimeout(typewriter('WHAT IS SPACE?', 'intro'), 1000);
   setTimeout(() => {
@@ -108,8 +150,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }, 1100);
 
   setInterval(changeColor, 300);
-
   fetchNewsArticles()
+  fetchAPOD()
 
-fetchAPOD()
+  darkModeButton.addEventListener('click', toggleDarkMode)
 });
