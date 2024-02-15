@@ -20,12 +20,30 @@
                 <h1 class="ms-4" id="title">visit <span id="planet">earth:</span></h1>
                 <p class="ms-4 pt-3" id="title-description">The Earth tour features historical reenactments, futuristic cityscapes, and global weather control</p>
                 <h1 id="price" class="ms-4"></h1>
-                <button id="buyNow"class="ms-4">Buy Now</button><br>
-                <button id="changeStuff" class="ms-4">Change</button>
-                
+                <button id="buyNow"class="ms-4 mt-4 bold-text">Buy Now <span id="buyArrow" class="bold-text">></span></button><br>
             </div>
-            <div class="col-4 custom-column"></div>
-            <div class="col-4 custom-column"></div>
+            <div class="col-4 custom-column align-items-end justify-content-center">
+                <img id="planet-img" src="" alt="" class="img-fluid">
+            </div>
+            <div class="col-4 pt-4 ps-3 custom-column">
+                <ul id="feature-container">
+                    <li>
+                        <img src="img/planets/hourglass.png" alt="" id="hourglass" class="features">
+                        <h4 class="feature-title">Timelapse of historical events</h4>
+                        <p class="pt-2 feature-description">Replay the events on Earth from the big bang to ChatGPT</p>
+                    </li>
+                    <li>
+                        <img src="img/planets/weather.png" alt="" class="features" id="weather">
+                        <h4 class="feature-title">Global weather control simulation</h4>
+                        <p class="feature-description">Control parameters and see your impact</p>
+                    </li>
+                    <li>
+                        <img src="img/planets/city.png" alt="" class="features">
+                        <h4 class="feature-title">Build your </h4>
+                        <p></p>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 

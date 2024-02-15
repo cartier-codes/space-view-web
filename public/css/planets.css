@@ -16,20 +16,63 @@
     src: url(../fonts/Poppins-SemiBold.ttf);
 }
 
+@font-face {
+    font-family: medium-poppins;
+    src: url('../fonts/Poppins-Medium.ttf');
+}
+@font-face {
+    font-family: poppins;
+    src: url('../fonts/poppins.regular.ttf');
+}
 .custom-column{
     height: 500px;
 }
 #title{
     font-family: bold-poppins;
-    font-size: 64px;
+    font-size: 74px;
 }
 
 #title-description{
     max-width: 350px;
+    color: grey;
+    font-family: medium-poppins;
 }
 .bold-text{
     font-family: helvetica-neue;
 }
 .text{
     font-family: helvetica-reg ;
+}
+
+#buyNow{
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 24px 10px 24px
+
+}
+#buyArrow{
+    background-color: gold;
+    color: white;
+    border-radius: 50%;
+    padding: 0px  5px 3px 5px;
+
+}
+
+.features{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+.feature-title{
+    font-size: 14px;
+    font-family: medium-poppins;
+    display: inline-block;
+}
+.feature-description{
+    font-family: medium-poppins;
+    font-size: 12px;
+    max-width: 250px;
+    padding-left: 60px;
+    color: grey;
 }

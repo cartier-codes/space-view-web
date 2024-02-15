@@ -1,5 +1,6 @@
 let isDarkMode = false;
 const navImages = document.querySelectorAll('nav img');
+const featureLogos = document.querySelectorAll('.features')
 
 
 function setDarkMode(mode){
@@ -9,6 +10,9 @@ function setDarkMode(mode){
 
 function updateStyles(){
     navImages.forEach((img)=>{
+        img.style.filter = isDarkMode ? 'invert(100%)' : 'invert(0%)';
+    })
+    featureLogos.forEach((img)=>{
         img.style.filter = isDarkMode ? 'invert(100%)' : 'invert(0%)';
     })
     document.body.style.color = isDarkMode ? '#e6e6fa' : '#323232';
