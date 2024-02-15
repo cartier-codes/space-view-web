@@ -16,10 +16,12 @@
     <?php include 'templates/nav.php'; ?>
     <div class="container">
         <div class="row">
-            <div class="col-4 ps-5 pt-4 custom-column">
-                <h1 class="ps-5" id="title">visit <span id="planet">earth:</span></h1>
-                <p class="ps-5 pt-3" id="title-description">The Earth tour features historical reenactments, futuristic cityscapes, and global weather control</p>
-                <button id="changeStuff">Change</button>
+            <div class="col-4 ps-4 pt-4 custom-column">
+                <h1 class="ms-4" id="title">visit <span id="planet">earth:</span></h1>
+                <p class="ms-4 pt-3" id="title-description">The Earth tour features historical reenactments, futuristic cityscapes, and global weather control</p>
+                <h1 id="price" class="ms-4"></h1>
+                <button id="buyNow"class="ms-4">Buy Now</button><br>
+                <button id="changeStuff" class="ms-4">Change</button>
                 
             </div>
             <div class="col-4 custom-column"></div>

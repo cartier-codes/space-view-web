@@ -13,15 +13,9 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
+$sql = "SELECT * FROM `planets` ORDER BY `planet_id` ASC;";
+$result = $conn->query($sql)->fetch_assoc();
 
-if(isset($_GET['id'])){
-    $planetID = $_GET['id'];
-    $sql = "SELECT *  FROM `planets` WHERE `planet_id` = '$planetID'";
-    $result = $conn->query($sql)->fetch_assoc();
-
-    
-
-}
 // Close connection
 $conn->close();
 

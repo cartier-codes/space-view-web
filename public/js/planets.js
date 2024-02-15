@@ -1,17 +1,15 @@
 import { isDarkMode, setDarkMode } from "./darkMode.js";
-  const darkModeButton = document.getElementById('dark-mode');
-    const changeButton = document.getElementById('changeStuff');
-    const planet = document.getElementById('planet');
+const darkModeButton = document.getElementById('dark-mode');
+const changeButton = document.getElementById('changeStuff');
+const planet = document.getElementById('planet');
+const price = document.getElementById('price');
+
 
 function fetchPlanet(){
-let random = Math.floor(Math.random()*8 + 1);
-let id = random
-
- fetch(`../public/includes/planet_data.php?id=${id}`)
+ fetch(`includes/planet_data.php?`)
         .then(response => response.json())
         .then(data => {
-            // Handle the response data
-            planet.innerText = data.name + ':';
+           console.log(data) 
 
         })
         .catch(error => console.error('Error:', error));
