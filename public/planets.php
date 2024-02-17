@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +21,7 @@
                 <button id="buyNow"class="ms-4 mt-4 bold-text">Buy Now <span id="buyArrow" class="bold-text">></span></button><br>
             </div>
             <div class="col-4 custom-column align-items-end justify-content-center">
-                <img id="planet-img" src="" alt="" class="img-fluid">
+                <img id="planet-img" src="img/planets/Rotating_earth_animated_transparent.gif" alt="" class="img-fluid">
             </div>
             <div class="col-4 pt-4 ps-3 custom-column">
                 <ul id="feature-container">
@@ -39,13 +37,35 @@
                     </li>
                     <li>
                         <img src="img/planets/city.png" alt="" class="features">
-                        <h4 class="feature-title">Build your </h4>
-                        <p></p>
+                        <h4 class="feature-title">Build your own futuristic city</h4>
+                        <p class="feature-description">Actualise your dreams with astro-view</p>
                     </li>
                 </ul>
             </div>
         </div>
+        <div id="otherPlanets" class="mb-3">
+           <div class="planet ms-5">
+                <img src="img/planets/earth-still.png" alt="" class="ms-5 planet-image">
+                <div class="rating"><h6>3</h6><img src="img/planets/star.png" alt=""></div>
+                <h3 class="mt-3 ms-5 planet-card-title">Earth Tour</h3>
+                <a href="" class="planet-card-link">Add to order +</a>
+           </div>
+           <div class="planet ms-5">
+                <img src="" alt="" class="ms-5 planet-image">
+                <div class="rating"><h6>3</h6><img src="img/planets/star.png" alt=""></div>
+                <h3 class="mt-3 ms-5 planet-card-title">Earth Tour</h3>
+                <a href="" class="planet-card-link">Add to order +</a>
+           </div>
+           <div class="planet ms-5">
+                <img src="" alt="" class="ms-5 planet-image">
+                <div class="rating"><h6>3</h6><img src="img/planets/star.png" alt=""></div>
+                <h3 class="mt-3 ms-5 planet-card-title">Earth Tour</h3>
+                <a href="" class="planet-card-link">Add to order +</a>
+           </div>
+
+        </div>
     </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
     <script type="module" src="js/planets.js"></script>

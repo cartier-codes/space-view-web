@@ -76,3 +76,49 @@
     padding-left: 60px;
     color: grey;
 }
+#otherPlanets{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.planet{
+    -webkit-box-shadow: 0px 6px 11px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 6px 11px -3px rgba(0,0,0,0.75);
+box-shadow: 0px 6px 11px -3px rgba(0,0,0,0.75);
+padding-bottom: 50px;
+padding-top: 45px;
+border-radius: 15px;
+}
+.planet img{
+    width: 130px;
+    height: 130px;
+}
+
+.rating{
+    background-color: black;
+    display: inline-flex;
+    padding: 8px 15px 5px 15px;
+    border-radius: 15px;
+    position: relative;
+    right: 60px;
+    top: 40px;
+    color: white;
+
+}
+.planet-card-title{
+    font-family: bold-poppins;
+}
+.rating img{
+    width: 20px;
+    height: 20px;
+    margin-left:5px ;
+}
+
+.planet-card-link{
+    margin-left: 60px;
+    text-decoration: none;
+    color: grey;
+    font-family: medium-poppins;
+}
+
