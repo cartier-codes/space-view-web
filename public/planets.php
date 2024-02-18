@@ -1,3 +1,5 @@
+<?php session_start() ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,8 +18,8 @@
         <div class="row">
             <div class="col-4 ps-4 pt-4 custom-column">
                 <h1 class="ms-4" id="title">visit <span id="planet">earth:</span></h1>
-                <p class="ms-4 pt-3" id="title-description">The Earth tour features historical reenactments, futuristic cityscapes, and global weather control</p>
-                <h1 id="price" class="ms-4"></h1>
+                 <p class="ms-4 pt-3" id="title-description">The Earth tour features historical reenactments, futuristic cityscapes, and global weather control</p>
+                <h1 id="price" class="ms-4">$10000</h1>
                 <button id="buyNow"class="ms-4 mt-4 bold-text">Buy Now <span id="buyArrow" class="bold-text">></span></button><br>
             </div>
             <div class="col-4 custom-column align-items-end justify-content-center">
