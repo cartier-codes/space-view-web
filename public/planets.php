@@ -1,5 +1,10 @@
-<?php session_start() ?>
+<?php session_start(); 
 
+if(!isset($_SESSION['user_id'])){
+    header('Location: login.php');
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +25,7 @@
                 <h1 class="ms-4" id="title">visit <span id="planet">earth:</span></h1>
                  <p class="ms-4 pt-3" id="title-description">The Earth tour features historical reenactments, futuristic cityscapes, and global weather control</p>
                 <h1 id="price" class="ms-4">$10000</h1>
-                <button id="buyNow"class="ms-4 mt-4 bold-text">Buy Now <span id="buyArrow" class="bold-text">></span></button><br>
+                <button id="buyNow" class="ms-4 pt-2 ps-5 pe-5 pb-2">Buy</button>
             </div>
             <div class="col-4 custom-column align-items-end justify-content-center">
                 <img  src="img/planets/Rotating_earth_animated_transparent.gif" alt="" class="img-fluid planet-img" >

@@ -3,11 +3,18 @@ const darkModeButton = document.getElementById('dark-mode');
 let planetCards = document.querySelectorAll('.planet')
 let buyButton = document.getElementById('buyNow')
 const title = document.getElementById('planet');
+const basketTitle = document.getElementById('basket-total')
+
+fetch('../public/api/basket_data.php')
+.then((response)=>response.json())
+.then(data => basketTitle.innerText = data)
+.catch(error => console.error('Error:', error));
+
+
 function capitalize(s)
 {
     return s[0].toUpperCase() + s.slice(1);
 }
-
 
 function fetchPlanets(){
     fetch('api/planet_data.php')
@@ -66,6 +73,8 @@ pricing.innerText = '$' + data[0]['pricing']
 
 
 }
+
+
 document.addEventListener('DOMContentLoaded',()=>{
     fetchPlanets()
     darkModeButton.addEventListener('click', ()=>{
@@ -76,9 +85,5 @@ document.addEventListener('DOMContentLoaded',()=>{
             fetchIndividualPlanet(card)
         })
     })
-
-
-
-
 })
 

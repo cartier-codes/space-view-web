@@ -69,3 +69,22 @@ font-family: helvetica-neue;}
 .nav-row button:hover{
     scale: 1.1;
 }
+#user{
+    width: 24px;
+    height: 24px;
+}
+
+#basket-total{
+    position: relative;
+    font-size: 12px;
+    top: -8px;
+    left: 8px;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+.nav-row2{
+    padding-top: 30px;
+}
