@@ -122,3 +122,12 @@ border-radius: 15px;
     font-family: medium-poppins;
 }
 
+#venus{
+    scale: 1.25;
+    margin-top: 30px;
+}
+
+#mercury{
+    scale: 1.5;
+    margin-top: 50px;
+}

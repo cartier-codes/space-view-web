@@ -21,7 +21,7 @@
                 <button id="buyNow"class="ms-4 mt-4 bold-text">Buy Now <span id="buyArrow" class="bold-text">></span></button><br>
             </div>
             <div class="col-4 custom-column align-items-end justify-content-center">
-                <img id="planet-img" src="img/planets/Rotating_earth_animated_transparent.gif" alt="" class="img-fluid">
+                <img  src="img/planets/Rotating_earth_animated_transparent.gif" alt="" class="img-fluid planet-img" >
             </div>
             <div class="col-4 pt-4 ps-3 custom-column">
                 <ul id="feature-container">
@@ -47,19 +47,19 @@
            <div class="planet ms-5">
                 <img src="img/planets/earth-still.png" alt="" class="ms-5 planet-image">
                 <div class="rating"><h6>3</h6><img src="img/planets/star.png" alt=""></div>
-                <h3 class="mt-3 ms-5 planet-card-title">Earth Tour</h3>
+                <h3 class="mt-3 ms-5 planet-card-title"></h3>
                 <a href="" class="planet-card-link">Add to order +</a>
            </div>
            <div class="planet ms-5">
                 <img src="" alt="" class="ms-5 planet-image">
                 <div class="rating"><h6>3</h6><img src="img/planets/star.png" alt=""></div>
-                <h3 class="mt-3 ms-5 planet-card-title">Earth Tour</h3>
+                <h3 class="mt-3 ms-5 planet-card-title"></h3>
                 <a href="" class="planet-card-link">Add to order +</a>
            </div>
            <div class="planet ms-5">
                 <img src="" alt="" class="ms-5 planet-image">
                 <div class="rating"><h6>3</h6><img src="img/planets/star.png" alt=""></div>
-                <h3 class="mt-3 ms-5 planet-card-title">Earth Tour</h3>
+                <h3 class="mt-3 ms-5 planet-card-title"></h3>
                 <a href="" class="planet-card-link">Add to order +</a>
            </div>
 
