@@ -2,7 +2,7 @@
 
 include '../config/credentials.php';
 session_start();
-
+$userID = $_SESSION['user_id'];
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection
@@ -10,7 +10,6 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$userID = $_SESSION['user_id'];
 $sql = "SELECT basket_id FROM `basket` WHERE user_id like '$userID';";
 $result = $conn->query($sql)->fetch_assoc();
 $basket_id = $result['basket_id'];

@@ -1,4 +1,4 @@
-<?php session_start(); 
+<?php session_start();
 
 if(!isset($_SESSION['user_id'])){
     header('Location: login.php');
@@ -68,8 +68,43 @@ if(!isset($_SESSION['user_id'])){
                 <div class="rating"><h6>3</h6><img src="img/planets/star.png" alt=""></div>
                 <h3 class="mt-3 ms-5 planet-card-title"></h3>
                 <a href="" class="planet-card-link">Add to order +</a>
+            </div>
+            <button id="more" class="ms-3"><span id="more-text">...</span></button>
+        </div>
+        <div id="otherPlanets2" class="mt-3">
+           <div class="planet ms-5">
+                <img src="img/planets/earth-still.png" alt="" class="ms-5 planet-image">
+                <div class="rating"><h6>3</h6><img src="img/planets/star.png" alt=""></div>
+                <h3 class="mt-3 ms-5 planet-card-title"></h3>
+                <a href="" class="planet-card-link">Add to order +</a>
            </div>
-
+           <div class="planet ms-5">
+                <img src="" alt="" class="ms-5 planet-image">
+                <div class="rating"><h6>3</h6><img src="img/planets/star.png" alt=""></div>
+                <h3 class="mt-3 ms-5 planet-card-title"></h3>
+                <a href="" class="planet-card-link">Add to order +</a>
+           </div>
+           <div class="planet ms-5">
+                <img src="" alt="" class="ms-5 planet-image">
+                <div class="rating"><h6>3</h6><img src="img/planets/star.png" alt=""></div>
+                <h3 class="mt-3 ms-5 planet-card-title"></h3>
+                <a href="" class="planet-card-link">Add to order +</a>
+            </div>
+            <button id="more2" class="ms-3">...</button>
+        </div>
+        <div id="otherPlanets3" class="mt-3">
+           <div class="planet ms-5">
+                <img src="img/planets/earth-still.png" alt="" class="ms-5 planet-image">
+                <div class="rating"><h6>3</h6><img src="img/planets/star.png" alt=""></div>
+                <h3 class="mt-3 ms-5 planet-card-title"></h3>
+                <a href="" class="planet-card-link">Add to order +</a>
+           </div>
+           <div class="planet ms-5">
+                <img src="" alt="" class="ms-5 planet-image">
+                <div class="rating"><h6>3</h6><img src="img/planets/star.png" alt=""></div>
+                <h3 class="mt-3 ms-5 planet-card-title" id="planet-title"></h3>
+                <a href="" class="planet-card-link">Add to order +</a>
+           </div>
         </div>
     </div>
 

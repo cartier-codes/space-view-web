@@ -9,7 +9,7 @@
 
 #img-link{
     position: relative;
-    align-self: self-start;
+    align-self: flex-start
 }
 
 nav{

@@ -51,13 +51,6 @@
     padding: 10px 24px 10px 24px
 
 }
-#buyArrow{
-    background-color: gold;
-    color: white;
-    border-radius: 50%;
-    padding: 0px  5px 3px 5px;
-
-}
 
 .features{
     width: 50px;
@@ -76,7 +69,7 @@
     padding-left: 60px;
     color: grey;
 }
-#otherPlanets{
+#otherPlanets, #otherPlanets2, #otherPlanets3{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,8 +119,29 @@ border-radius: 15px;
     scale: 1.4;
     margin-top: 30px;
 }
-
-#mercury{
+#neptune{
+    margin-left: 60px;
+    margin-top: 50px;
+    scale: 1.8;
+}
+#mercury, #uranus{
     scale: 1.5;
     margin-top: 50px;
 }
+#mars{
+    scale: 2;
+    margin-top: 50px;
+    margin-left: 55px;
+}
+#more, #more2{
+    font-size: 32px;
+    align-self: flex-end;
+    border: none ;
+    background-color: transparent;
+
+}
+
+#otherPlanets2, #otherPlanets3{
+    display: none;
+}
+
