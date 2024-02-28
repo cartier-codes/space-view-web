@@ -5,10 +5,10 @@ let buyButton = document.getElementById('buyNow')
 const title = document.getElementById('planet');
 const basketTitle = document.getElementById('basket-total')
 const moreButton = document.getElementById('more');
-const secondMoreButton = document.getElementById('more2');
 const firstRow = document.getElementById('otherPlanets');
 const secondRow = document.getElementById('otherPlanets2');
 const thirdRow = document.getElementById('otherPlanets3');
+
 
 function basketNumber(){
     fetch('api/basket_data.php')
@@ -83,27 +83,19 @@ pricing.innerText = '$' + data[0]['pricing']
 }
 
 function addToBasket(str){
-if(str.indexOf(':') != -1){
 let name = str.slice(0, -1);
     fetch(`api/add_to_basket.php?name=${name}`)
     .then(response => response.json())
     .then(data => console.log(data))
     .catch(error => console.error('Error', error))
-    basketNumber()
-}
-else{
-let name = str.slice(0, str.indexOf(' '))
-    fetch(`api/add_to_basket.php?name=${name}`)
-    .then(response => response.json())
-    .then(data => console.log(data))
-    .catch(error => console.error('Error', error))
-}
-}
+
+basketNumber()
+ }
 
 function flex(row){
-    row.style.display = row.style.display == 'flex' ? row.style.display = 'none' : row.style.display = 'flex';
-}
+    row.style.display = row.style.display == 'flex'? 'none' : 'flex';
 
+}
 
 
 document.addEventListener('DOMContentLoaded',()=>{
@@ -113,8 +105,6 @@ document.addEventListener('DOMContentLoaded',()=>{
     })
     moreButton.addEventListener('click',()=>{
         flex(secondRow)
-    })
-    secondMoreButton.addEventListener('click',()=>{
         flex(thirdRow)
     })
     buyButton.addEventListener('click', ()=>{

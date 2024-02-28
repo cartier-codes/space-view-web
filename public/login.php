@@ -17,21 +17,22 @@
 <body>
     <div class="wrapper">
         <div class="form-container">
-            <!-- Sign Up Form -->
             <form action="signup.php" method="post">
                 <h2 class="text-center">Sign Up</h2>
                 <input type="text" id="signup-username" name="signup-username" required placeholder="Username">
                 <input type="password" id="signup-password" name="signup-password" required class="passwords mt-3" placeholder="password">
                 <button type="submit">Sign Up</button>
             </form>
-
-            <!-- Sign In Form -->
-            <form action="signin.php" method="post">
-                <h2 class="text-center mt-3">Sign In</h2>
-                <input type="text" id="signin-username" name="signin-username" required placeholder="username">
-                <input type="password" id="signin-password" name="signin-password" required class="passwords mt-3" placeholder="password">
-                <button type="submit">Sign In</button>
+            <form id="signin-form" action="signin.php" method="post">
+                <label for="signin-username">Username:</label>
+                <input type="text" id="signin-username" name="signin-username" required>
+                
+                <label for="signin-password">Password:</label>
+                <input type="password" id="signin-password" name="signin-password" required>
+                
+                <button type="submit">Login</button>
             </form>
+
         </div>
     </div>
 </body>

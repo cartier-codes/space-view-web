@@ -1,8 +1,13 @@
 <?php session_start();
 
 if(!isset($_SESSION['user_id'])){
-    header('Location: login.php');
+  echo '<script>
+            setTimeout(function() {
+                window.location.href = "login.php"; // Replace with the actual URL of your login page
+            }, 3000); // 3000 milliseconds = 3 seconds
+          </script>';
 }
+
 
 ?>
 <!DOCTYPE html>
@@ -72,25 +77,24 @@ if(!isset($_SESSION['user_id'])){
             <button id="more" class="ms-3"><span id="more-text">...</span></button>
         </div>
         <div id="otherPlanets2" class="mt-3">
-           <div class="planet ms-5">
+           <div class="planet ms-5 me-4">
                 <img src="img/planets/earth-still.png" alt="" class="ms-5 planet-image">
                 <div class="rating"><h6>3</h6><img src="img/planets/star.png" alt=""></div>
                 <h3 class="mt-3 ms-5 planet-card-title"></h3>
                 <a href="" class="planet-card-link">Add to order +</a>
            </div>
-           <div class="planet ms-5">
+           <div class="planet ms-5 me-4">
                 <img src="" alt="" class="ms-5 planet-image">
                 <div class="rating"><h6>3</h6><img src="img/planets/star.png" alt=""></div>
                 <h3 class="mt-3 ms-5 planet-card-title"></h3>
                 <a href="" class="planet-card-link">Add to order +</a>
            </div>
-           <div class="planet ms-5">
+           <div class="planet ms-5 me-4 mb-4">
                 <img src="" alt="" class="ms-5 planet-image">
                 <div class="rating"><h6>3</h6><img src="img/planets/star.png" alt=""></div>
                 <h3 class="mt-3 ms-5 planet-card-title"></h3>
                 <a href="" class="planet-card-link">Add to order +</a>
             </div>
-            <button id="more2" class="ms-3">...</button>
         </div>
         <div id="otherPlanets3" class="mt-3">
            <div class="planet ms-5">

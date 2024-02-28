@@ -1,9 +1,6 @@
 <?php
 // Replace with your actual database credentials
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "astro-view-db";
+include 'config/credentials.php';
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
