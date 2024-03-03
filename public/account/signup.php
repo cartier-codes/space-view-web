@@ -1,9 +1,9 @@
 <?php
 // Replace with your actual database credentials
-include 'config/credentials.php';
+include '../templates/connectToDatabase.php';
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = connectToDB(); 
 
 // Check connection
 if ($conn->connect_error) {

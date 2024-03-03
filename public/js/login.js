@@ -20,8 +20,7 @@ loginForm.addEventListener('submit', async (event) => {
     const result = await response.json();
 
     if (result.success) {
-        console.log(result.message);
-        window.location.href = 'planets.php';
+            window.location.href = '../planets.php';
         // Optionally, redirect or perform other actions upon successful login
     } else {
         // Display an error message to the user

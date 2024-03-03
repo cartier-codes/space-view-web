@@ -88,8 +88,6 @@ let name = str.slice(0, -1);
     .then(response => response.json())
     .then(data => console.log(data))
     .catch(error => console.error('Error', error))
-
-basketNumber()
  }
 
 function flex(row){
@@ -102,13 +100,15 @@ document.addEventListener('DOMContentLoaded',()=>{
     fetchPlanets()
     darkModeButton.addEventListener('click', ()=>{
         setDarkMode(!isDarkMode)
-    })
+        })
+   
     moreButton.addEventListener('click',()=>{
         flex(secondRow)
         flex(thirdRow)
     })
     buyButton.addEventListener('click', ()=>{
         addToBasket(title.innerText)
+        basketNumber()
     })
     console.log()
     planetCards.forEach((card)=>{

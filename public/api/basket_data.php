@@ -1,9 +1,9 @@
 <?php
 
-include '../config/credentials.php';
+include '../templates/connectToDatabase.php';
 session_start();
 $userID = $_SESSION['user_id'];
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = connectToDB(); 
 
 // Check connection
 if ($conn->connect_error) {

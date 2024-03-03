@@ -10,7 +10,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Home</title>
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/title-icon.png" type="image/x-icon">
 </head>
 
 <body>
@@ -34,89 +34,16 @@
         <div class="col-2"></div>
         <div class="col-2"><img src="img/index/img-7.jpg" alt="" class="img-fluid"></div>
     </div>
-    <div data-aos="zoom-in-up" id="definition-wrapper">
+    <div data-aos="zoom-in-up" id="definition-wrapper" class="mb-5">
         <h1 id='definition' class="bold-text">the universe is all of space and time and their contents,</h1>
         <h1 class="bold-text ms-3">like a cosmic attic filled with stars and galaxies, and the occasional</h1>
         <h1 class="bold-text ms-3">lost sock from a rogue black hole.</h1>
-    </div>
-    <div class="container" id='space-definition-wrapper'>
-        <div class="row mt-5" id="space-definition">
-            <div class="col-3 custom-column">
-                <p data-aos="fade-down-right" class="text">If the universe is everything in existence, the space is the empty void between everything. Outer space is the region outside of planet's atmosphere, and for Earth's inhabitants it starts 62 miles above sea level.</p>
-                <p data-aos="fade-up-right" class="text">The line separating the atmosphere and outer space is the Karman Line. "Outer space" and the "universe" are usually used synonymously; however outer space refers only to the area between planets, while universe encompasses everything.</p>
-                <p data-aos="fade-up" class="text">What is space? Where does it come from? Is there a creator? These are the questions that have plagued Man for hundreds of years, even before early astronomers in Ancient Babylonia up until now. The Babylonians used clay tablets, and these primitive diaries kept the night-by-night records of temple astronomers.</p>
-            </div>
-            <div class="col-3 custom-column">
-                <p data-aos="fade-down-left" class="text">Over time, Babylonian astronomers could predict the behaviour of the moon and other planets and by 300BCE planetary behaviours were already foreseen. Likewise, Indian astronomy started in third millenium BCE, which was believed to create calendars. Chinese astronomy started around the sixth century BCE, in which they could accurately predict eclipses.</p>
-                <p data-aos='fade-up-right' class="text">For more history, including the pioneers: <a href="" id="historylink">history</a></p>
-            </div>
-            <div class="col-3 custom-column" data-aos="fade-down-left">
-                <h1 class="bold-text" id="pioneers">Pioneers:</h1>
-                <ul class="text">
-                    <li>Ptholemy</li>
-                    <li>Aristarchus of Samos</li>
-                    <li>Erastothenes</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="container" data-aos="zoom-in">
-        <div class="row mt-5" id="interview">
-            <div class="row">
-                <div class="col-1">
-                    <h6>You:</h6>
-                </div>
-                <div class="col-3">
-                    <h6>What is the big bang, and how did it start?</h6>
-                </div>
-                <div class="col-5"></div>
-            </div>
-            <div class="row">
-                <div class="col-1">
-                    <h6>Astronomer:</h6>
-                </div>
-                <div class="col-6 ms-5">
-                    <p class="text">The Big Bang is a theory that the universe began at a single point, infinitely hot and full of energy. Then, it exploded; suddenly expanding the universe at the speed of light. This lasted about 10^-32 seconds, and then cosmic inflation came to a standstill. The standstill meant that a flood of matter and radiation began populating the unviverse with the stuff we know about today: particles, atoms, and the building blocks for stars and galaxies. How it started? That is a question no scientist has a definite answer to.</p>
-                </div>
-                <div class="col-2"></div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-1">
-                    <h6>You:</h6>
-                </div>
-                <div class="col-3">
-                    <h6>What are stars made of?</h6>
-                </div>
-                <div class="col-5"></div>
-            </div>
-            <div class="row">
-                <div class="col-1">
-                    <h6>Astronomer:</h6>
-                </div>
-                <div class="col-6 ms-5">
-                    <p class="text">Stars are giant balls of hot gas, mostly hydrogen and helium.</p>
-                </div>
-                <div class="col-2"></div>
-            </div>
-        </div>
-    </div>
-    <h3 class="astro-view">astro-view</h3>
-    <div class="row mt-5" id="card-wrapper">
-        <div class="col-3">
-            <div id="card">
-                <h4>For more information about the science behind space:</h4>
-                <ul>
-                    <li><a href="">Planets</a></li>
-                <li><a href="">Science</a></li>
-                </ul>
-            </div>
-        </div>
     </div>
     <div class="row mt-5 justify-content-center">
         <h1 class="bold-text text-center">THE LATEST NEWS</h1>
     </div>
     <div class="container-fluid" data-aos="zoom-in">
-        <div class="row ms-4  mt-5 justify-content-md-evenly">
+        <div class="row ms-4 justify-content-md-evenly">
             <div class="col-md-3 col-12">
                 <div class="news-card">
                 </div>
@@ -136,14 +63,6 @@
                 <div class="news-card"></div>
             </div>
         </div>
-        <div class="row mt-3 mb-4 justify-content-center" data-aos="zoom-in">
-            <div class="col-3">
-                <div class="card-space">
-                    <h3>For more news on space, space news and launches, check out:</h3>
-                    <a href="" class="bold-text">News</a>
-                </div>
-            </div>
-        </div>
     </div>
     <h3 class="astro-view">astro-view</h3>
     <h1 class="bold-text text-center">APOD</h1>
@@ -157,14 +76,6 @@
         </div>
         <div class="row justify-content-center">
             <h1 class="text-center bold-text" id="apod-date"></h1>
-        </div>
-    </div>
-    <div class="container mt-5">
-        <div class="row justify-content-center">
-            <div class="col-8">
-                <h1 class="bold-text text-center">Launches</h1>
-                <h1 class="bold-text text-center">Use your left and right arrow keys < > </h1>
-            </div>
         </div>
     </div>
     <script type='module' src='js/script.js'></script>

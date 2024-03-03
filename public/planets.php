@@ -3,7 +3,7 @@
 if(!isset($_SESSION['user_id'])){
   echo '<script>
             setTimeout(function() {
-                window.location.href = "login.php"; // Replace with the actual URL of your login page
+                window.location.href = "account/login.php"; // Replace with the actual URL of your login page
             }, 3000); // 3000 milliseconds = 3 seconds
           </script>';
 }
@@ -21,6 +21,7 @@ if(!isset($_SESSION['user_id'])){
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="shortcut icon" href="img/title-icon.png" type="image/x-icon">
 </head>
 <body>
     <?php include 'templates/nav.php'; ?>

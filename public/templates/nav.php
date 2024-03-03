@@ -14,8 +14,8 @@
             </div>
             <div class="nav-row2">
                 <ul>
-                    <li id="basket"><a href="basket.php"><img src="img/icons8-shopping-bag-24.png" alt=""><h1 id="basket-total"></h1></a></li>
-                    <li><a href="account.php"><img id="user" src="img/user.png" alt=""></a></li>
+                    <li id="basket"><a href="account/basket.php"><img src="img/icons8-shopping-bag-24.png" alt=""><h1 id="basket-total"></h1></a></li>
+                    <li><a href="account/account.php"><img id="user" src="img/user.png" alt=""></a></li>
                 </ul>
             </div>
         </nav> 

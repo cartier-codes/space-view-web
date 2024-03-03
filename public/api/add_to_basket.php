@@ -1,14 +1,11 @@
 <?php
 
-include '../config/credentials.php';
+include '../templates/connectToDatabase.php';
 session_start();
 $userID = $_SESSION['user_id'];
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = connectToDB();
 
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
 
 if(isset($_GET['name'])){  
     $name = $conn->real_escape_string($_GET['name']);
@@ -45,7 +42,6 @@ if(isset($_GET['name'])){
     } else {
         $response = array('success' => false, 'message' => "Could not add tour to basket");
     }
-
     echo json_encode($response);
 } else {
     $response = array('success' => false, 'message' => "Could not add tour to basket");
@@ -55,5 +51,6 @@ if(isset($_GET['name'])){
 $stmt->close();
 $stmt2->close();
 $stmt3->close();
-$conn->close();
+closeConnection($conn);
+
 ?>

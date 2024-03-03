@@ -1,12 +1,7 @@
 <?php
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "astro-view-db";
-
+include '../templates/connectToDatabase.php';
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = connectToDB(); 
 
 // Check connection
 if ($conn->connect_error) {

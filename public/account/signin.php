@@ -1,9 +1,8 @@
 <?php
 
-include 'config/credentials.php';
 session_start();
-$conn = new mysqli($servername, $username, $password, $dbname);
-
+include '../templates/connectToDatabase.php';
+$conn = connectToDB();
 
 if($conn->connect_error){
     die("Connection failed: " . $conn->connect_error);
