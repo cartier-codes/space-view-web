@@ -44,13 +44,9 @@ if ($basketId) {
     // Prepare and bind the statement for the planet query
     $stmtPlanet = $connection->prepare($planetQuery);
     $stmtPlanet->bind_param("i", $basketId);
-
     // Execute the planet query
     $stmtPlanet->execute();
-
-    // Bind result variables for planet query
     $stmtPlanet->bind_result($time, $name, $pricing, $stillImg);
-
     $planets=[];
     // Fetch the results
     while ($stmtPlanet->fetch()) {
@@ -60,7 +56,6 @@ if ($basketId) {
     foreach ($planets as $planet) {
         echo $planet . "<br>";
     }
-
     // Close the statement for the planet query
     $stmtPlanet->close();
 } else {

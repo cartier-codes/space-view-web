@@ -9,7 +9,7 @@ loginForm.addEventListener('submit', async (event) => {
     const userEnteredPassword = passwordInput.value;
 
     // Send the entered username and password to the server for authentication
-    const response = await fetch('signin.php', {
+    const response = await fetch('../api/signin.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded',

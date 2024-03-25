@@ -1,44 +1,56 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planets</title>
+    <title>Document</title>
     <link rel="stylesheet" href="../css/login.css">
-    <link rel="stylesheet" href="../css/nav.css"> 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="form-container">
-            <form action="signup.php" method="post">
-                <h2 class="text-center">Sign Up</h2>
-                <input type="text" id="signup-username" name="signup-username" required placeholder="Username">
-                <input type="password" id="signup-password" name="signup-password" required class="passwords mt-3" placeholder="password">
-                <button type="submit">Sign Up</button>
-            </form>
-            <form id="signin-form" action="signin.php" method="post">
-                <label for="signin-username">Username:</label>
-                <input type="text" id="signin-username" name="signin-username" required>
-                
-                <label for="signin-password">Password:</label>
-                <input type="password" id="signin-password" name="signin-password" required>
-                
-                <button type="submit">Login</button>
-            </form>
-
+    <section class="container">
+        <div class="image-section">
+            <div class="image-wrapper">
+                <img src="../img/mesh-gradient.png" alt="">
+            </div>
+            <div class="content-container">
+                <h1 class="section-heading">Empowering Minds Through Digital <span>Education.</span></h1>
+                <p class="section-paragraph">Every step forward is a step towards knowledge. Embrace the journey.</p>
+            </div>
         </div>
-    </div>
+        <div class="form-section">
+            <div class="form-wrapper">
+                <div class="logo-container">
+                    <a href="#" class="logo-container">
+                        <img src="../img/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <h2>Welcome Back! 👋🏻</h2>
+                <p>Enter your credentials to access your account.</p>
+                <div class="input-container">
+                    <form id="signin-form">
+                        <label for="username">Username</label><br>
+                        <input type="text" id="signin-username" name="signin-username" autocomplete="off"><br>
+                        <label for="password">Password</label><br>
+                        <input type="password" id="signin-password" name="signin-password">
+                </div>
+                <div class="remember-forgot">
+                    <div class="remember-me">
+                        <input type="checkbox" value="remember-me" id="remember-me">
+                        <label for="remember-me">Remember me</label>
+                    </div>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button class="login-btn" id="login-btn" type="submit">Log In</button>
+                <p id="signup">Don't have an account? <a href="">Sign up</a></p>
+</form>
+                <div class="or-divider">or</div>
+                <button class="google-signin">
+                    <object data="./google.svg"></object>
+                    <span>Sign in with Google</span>
+                </button>
+            </div>
+        </div>
+    </section>
 </body>
-</html>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
-<script src="../js/login.js" type="module"></script>
-</body>
+<script src="../js/login.js"></script>
 </html>
