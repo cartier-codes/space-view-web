@@ -11,6 +11,20 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
+if(isset($_GET['name'])){
+$name = $_GET['name'];
+$sql = "SELECT * FROM `planets` WHERE name = $name;";
+$result = $conn->query($sql);
+$data = [];
+while ($row = $result->fetch_assoc()) {
+    $data[] = $row;
+}
+
+// Close connection
+$conn->close();
+
+echo json_encode($data);
+}
 if(isset($_GET['id'])){
 $id = $_GET['id'];
 $sql = "SELECT * FROM `planets` WHERE planet_id = '$id';";

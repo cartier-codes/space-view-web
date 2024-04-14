@@ -11,7 +11,7 @@ const thirdRow = document.getElementById('otherPlanets3');
 
 
 function basketNumber(){
-    fetch('api/basket_data.php')
+    fetch('api/access_basket.php?length=true')
     .then((response)=>response.json())
     .then(data => basketTitle.innerText = data)
     .catch(error => console.error('Error:', error));

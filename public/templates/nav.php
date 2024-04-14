@@ -1,10 +1,10 @@
 
     <header>
         <nav>
-            <a href="index.php" id="img-link"><img src="img/logo.png" alt="" class="logo"></a>
+            <a href="/space-view/public/index.php" id="img-link"><img src="/space-view/public/img/logo.png" alt="" class="logo"></a>
             <div class="nav-row">
                 <ul>
-                    <li><a href="planets.php">planets</a></li>
+                    <li><a href="/space-view/public/planets.php">planets</a></li>
                     <li><a href="">science</a></li>
                     <li><a href="">stars</a></li>
                     <li><a href="">history</a></li>
@@ -14,8 +14,8 @@
             </div>
             <div class="nav-row2">
                 <ul>
-                    <li id="basket"><a href="account/basket.php"><img src="img/icons8-shopping-bag-24.png" alt=""><h1 id="basket-total"></h1></a></li>
-                    <li><a href="account/account.php"><img id="user" src="img/user.png" alt=""></a></li>
+                    <li id="basket"><a href="/space-view/public/account/basket.php"><img src="/space-view/public/img/icons8-shopping-bag-24.png" alt=""><h1 id="basket-total"></h1></a></li>
+                    <li><a href="/space-view/public/account/account.php"><img id="user" src="/space-view/public/img/user.png" alt=""></a></li>
                 </ul>
             </div>
         </nav> 
