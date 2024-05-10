@@ -22,7 +22,11 @@ if(!isset($_SESSION['user_id'])){
 <div class="container">
 <img id="profile" src="" alt="">
 <h2 id="username"></h2>
-<h2 id="level"></h2>
+<div class="otherContainer">
+<h2 id="level">LEVEL: </h2> 
+<h2 id="tours">TOURS COMPLETED: </h2> 
+</div>
+<a href="/space-view/public/account/passport.php" id="passport">PASSPORT</a>
 </div>
 <script src="/space-view/public/js/account.js"></script></body>
 </html>

@@ -86,7 +86,10 @@ function addToBasket(str){
 let name = str.slice(0, -1);
     fetch(`api/add_to_basket.php?name=${name}`)
     .then(response => response.json())
-    .then(data => console.log(data))
+    .then(data => {
+      console.log(data)
+      basketNumber()
+    })
     .catch(error => console.error('Error', error))
  }
 
@@ -108,7 +111,6 @@ document.addEventListener('DOMContentLoaded',()=>{
     })
     buyButton.addEventListener('click', ()=>{
         addToBasket(title.innerText)
-        basketNumber()
     })
     console.log()
     planetCards.forEach((card)=>{

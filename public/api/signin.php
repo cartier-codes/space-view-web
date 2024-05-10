@@ -26,6 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if ($result_user_id) {
         // Now you have $hashed_password, and you can use password_verify() to check the entered password
+        // Fix here: use 'signin-password' instead of 'password'
         $entered_password = $_POST['signin-password'];
 
         if (password_verify($entered_password, $hashed_password)) {

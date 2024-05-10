@@ -1,5 +1,4 @@
 <?php session_start();
-echo $_SESSION['user_id'];
 if(!isset($_SESSION['user_id'])){
   echo '<script>
             setTimeout(function() {

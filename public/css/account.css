@@ -1,3 +1,16 @@
+@font-face {
+    font-family: bold-poppins;
+    src: url(../fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: medium-poppins;
+    src: url('../fonts/Poppins-Medium.ttf');
+}
+@font-face {
+    font-family: poppins;
+    src: url('../fonts/poppins.regular.ttf');
+}
 .container{
   display:flex;
   flex-direction:column;
@@ -9,3 +22,30 @@
   width: 10em;
   height: 10em;
 }
+
+#username{
+  font-family:poppins
+}
+
+#level, #tours{
+  font-family:bold-poppins
+}
+#passport{
+  text-decoration: none;
+  font-family:bold-poppins;
+  font-size : 1.1em;
+  border-radius: 15px;
+
+}
+#passport:hover{
+  text-decoration: underline;
+}
+.otherContainer{
+display:flex;
+gap: 4em;
+align-items: center;
+justify-content: center;
+padding-left: 5em;
+margin-bottom: 1em;
+}
+

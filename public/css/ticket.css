@@ -1,13 +1,14 @@
 @font-face {
-    font-family: cascadiacode;
-    src: url('../fonts/CascadiaMono.ttf');
+    font-family: bold-poppins
+    src: url(../fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: medium-poppins;
+    src: url('../fonts/Poppins-Medium.ttf');
 }
 @font-face {
-    font-family: bal;
-    src: url('../fonts/Bal-Regular.ttf');
-}
-@font-face {
-    font-family: poppins;
+    font-family: bold-poppins;
     src: url('../fonts/poppins.regular.ttf');
 }
 
@@ -105,7 +106,7 @@ body {
     position: relative;
     left: 15px;
     padding-left: 10px;
-    font-family: cascadiacode;
+    font-family: poppins;
     font-size: 13px;
     top: -6px;
 }
@@ -122,7 +123,7 @@ position: relative;
 margin-left: 20px;
 margin-right: 20px;
 font-size: 18px;
-font-family: poppins;
+font-family: bold-poppins;
 }
 
 .passenger{
@@ -181,7 +182,7 @@ top: -155px;
     left: 60px;
     justify-content: space-between;
     max-width: 460px;
-    font-family: bal;
+    font-family: poppins;
 
 }
 
@@ -193,6 +194,7 @@ top: -155px;
 
 .departure, .destination{
     font-size: 170px;
+    font-family: bold-poppins;
 
 }
 
@@ -209,7 +211,7 @@ top: -155px;
  left: 350px;
  max-width: 340px;
  font-size: 11px;
- font-family: poppins;
+ font-family: bold-poppins;
  text-align: center;
 }
 
@@ -227,13 +229,13 @@ top: -155px;
 
 #row .destination {
     font-size: 52px !important;
-    font-family: poppins;
+    font-family: bold-poppins;
     letter-spacing: -3px;
 }
 
 #row .departure{
     font-size: 52px !important;
-    font-family: poppins;
+    font-family: bold-poppins;
 letter-spacing: -3px;
 }
 #row img{
@@ -251,7 +253,7 @@ letter-spacing: -3px;
     align-items: center;
     left: 712px;
     position: relative;
-    top: -645px;
+    top: -649px;
     background-color: pink;
     display: inline-block;
     border-top-right-radius: 30px;
@@ -269,17 +271,17 @@ letter-spacing: -3px;
 
 #side-ticket-title #short-departure{
 font-size: 56px;    
-font-family: poppins;
+font-family: bold-poppins;
 }
 
 #side-ticket-title #short-destination{
 font-size: 56px;
-font-family: poppins;
+font-family: bold-poppins;
 }
 
 #side-ticket-main{
     position: relative;
-    top: -646px;
+    top: -650px;
     left: 712px;
     height: 392px;
     width: 298px;
@@ -289,7 +291,7 @@ font-family: poppins;
 #side-ticket-passenger{
     position: relative;
     left: 40px;
-    font-family: poppins;
+    font-family: bold-poppins;
     top: 220px;
 }
 
@@ -336,7 +338,7 @@ position: relative;
     position: relative;
     top: -156px;
     left: 67px;
-font-family: poppins ;
+font-family: bold-poppins ;
 }
 
 #side-ticket-flight-titles{
@@ -354,7 +356,7 @@ font-family: poppins ;
     padding-top: 40px;
     display: flex;
     flex-direction: column-reverse;
-    font-family: poppins;
+    font-family: bold-poppins;
 }
 #side-ticket-divide2{
     position: relative;

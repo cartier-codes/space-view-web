@@ -1,6 +1,7 @@
 <?php
 session_start();
 $userID = $_SESSION['user_id'];
+$data = include '../api/account_data.php';
 ?>
 <!DOCTYPE html>
 
@@ -35,29 +36,25 @@ $userID = $_SESSION['user_id'];
               <img src="https://kasperdebruyne.be/img/emblem.svg" id="seal">
             </div>
             <div class="text">
-              <p class="big-text"> THE CITY OF BROOKLYN ZOO</p>
+              <p class="big-text"> THE CITY OF ASTRO-VIEW</p>
               <p class="small-text">Department of Social Services</p>
             </div>
           </div>
           <div class="blue">
             <div class="info-label">
               <p>CITIZEN STATUS HERE</p>
-              <hr>
-              <hr>
-              <hr>
-              <hr>
-              <hr>
-              <p>Artist's name here</p>
               <p class="typed-text">
-              <span>CITIZEN NO <?php echo $userID; ?></span>
+              <span>CITIZEN NO:  <?php echo $userID; ?></span>
                 <br>
-                <span>36 CHAMBERS:</span>
+                <span id="name">NAME: <?php echo $data['username']; ?></span>
                 <br>
-                <span>THE DIRTY VERSION</span>
+                <span id="role">CITIZEN LEVEL: <?php echo $data['level']; ?></span>
                 <br>
-                <span>11-15-68 IX32</span>
                 <br>
-                <span>Ol'DIRTY BASTARD</span>
+                <br>
+                <br>
+                <span id="tours">TOUR TOTAL: <?php echo $data['tours_completed']; ?></span>
+                <br>
               </p>
             </div>
           </div>
@@ -66,11 +63,10 @@ $userID = $_SESSION['user_id'];
         </div>
 
         <div class="bottom">
-          <p>Signature of Head of Household/Payee</p>
-          <p>Firma de Jefe de Familia/Beneficiaro</p>
+          <p>Signature of The Leader</p>
+          <p>リーダーのサイン</p>
 <img src="/space-view/public/img/signature.png" id="signature" alt="">
         </div>
-        <!--<img src="https://kasperdebruyne.be/img/seal-pattern.svg" id="seal-pattern">-->
         <svg id="seal-pattern" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1315.424 157.714">
   <title>seal-pattern</title>
   <g class="seal-pattern">
