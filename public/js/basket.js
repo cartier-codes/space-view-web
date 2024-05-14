@@ -128,10 +128,13 @@ document.addEventListener('DOMContentLoaded', () => {
       let price = document.createElement('h3');
       price.classList.add('price');
       price.innerHTML = element.pricing;
+      let removeButton = document.createElement('button');
+      removeButton.id = "removeButton"
 
       card.appendChild(image);
       card.appendChild(title);
       card.appendChild(price);
+      card.appendChild(removeButton)
       container.appendChild(card);
     });
     
