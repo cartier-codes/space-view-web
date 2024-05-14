@@ -279,9 +279,11 @@ padding-left: 1em;
   
 }
 #removeButton{
-  padding: 5px 5px 5px 5px;
+  margin-bottom: 100px;
   background: transparent;
   border: none;
   color: #000;
+  cursor: pointer;
+
   width: fit-content;
 }
