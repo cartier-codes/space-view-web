@@ -130,6 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
       price.innerHTML = element.pricing;
       let removeButton = document.createElement('button');
       removeButton.id = "removeButton"
+      removeButton.innerHTML = "X";
 
       card.appendChild(image);
       card.appendChild(title);
