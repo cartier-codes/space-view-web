@@ -286,3 +286,6 @@ padding-left: 1em;
   cursor: pointer;
   width: fit-content;
 }
+#removeButton:hover{
+  text-decoration: underline;
+}
