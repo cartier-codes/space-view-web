@@ -284,6 +284,7 @@ padding-left: 1em;
   border: none;
   color: #000;
   cursor: pointer;
+  font-family: Poppins-Bold;
   width: fit-content;
 }
 #removeButton:hover{
